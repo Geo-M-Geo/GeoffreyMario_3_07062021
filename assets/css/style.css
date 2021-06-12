@@ -1,0 +1,25 @@
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.titre-footer {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.btn {
+  background-color: #9356DC;
+  border-radius: 40px;
+  color: white;
+  border: 1px solid #9356DC;
+  padding: 22px;
+  font-size: 1.5rem;
+}
+
+.logo-site__full {
+  display: none;
+}
+.logo-site__mobile {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
