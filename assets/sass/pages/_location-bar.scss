@@ -1,0 +1,27 @@
+// Location bar //
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+    & input::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    
+    &__city {
+        border: none;
+        background-color: #eaeaea;
+        font-size: 1.1rem;        
+    }
+    &__logo {
+        margin: auto 18px auto 30px;
+        font-size: 1.1rem;
+        padding-left: 50px;
+    }
+    
+}

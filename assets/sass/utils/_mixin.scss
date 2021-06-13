@@ -4,7 +4,7 @@
     }
     &__mobile{
         display: block;
-    }   
+    }
 }
 
 @mixin full-picture-size{
@@ -19,8 +19,10 @@
 @mixin header {
         display: flex;
         justify-content: center;
-        margin-top: 23px;
+        margin: 23px auto 18px auto;
 }
+
+
 
 @mixin mobile {
     @media all and (max-width: map-get($breakpoints, mobile-size )){

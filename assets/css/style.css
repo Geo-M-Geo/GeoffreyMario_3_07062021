@@ -6,6 +6,11 @@
   font-family: "Shrikhand", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .btn {
   background-color: #9356DC;
   border-radius: 40px;
@@ -18,7 +23,7 @@
 .logo-site {
   display: flex;
   justify-content: center;
-  margin-top: 23px;
+  margin: 23px auto 18px auto;
 }
 @media all and (max-width: 767px) {
   .logo-site__full {
@@ -49,6 +54,34 @@
     font-size: 1.5rem;
     color: black;
   }
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.location input::placeholder {
+  color: black;
+  opacity: 1;
+}
+.location__city {
+  border: none;
+  background-color: #eaeaea;
+  font-size: 1.1rem;
+}
+.location__logo {
+  margin: auto 18px auto 30px;
+  font-size: 1.1rem;
+  padding-left: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
