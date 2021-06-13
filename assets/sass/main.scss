@@ -3,6 +3,7 @@
 @import "./composants/button";
 @import "./utils/mixin"; 
 @import "./layout/header";
+@import "./composants/button";
 @import "./pages/location-bar";
 
 
@@ -16,5 +17,44 @@ body {
 
 }
 
+// introduction 
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 56px;
+    background-color: $quaternary-color;
+    & h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 64px 0 64px; 
+        @include tablette {
+            font-size: 1.8rem;
+        }
+    }
+    & p {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 20px 36px 34px 36px;
+        opacity: 0.5;
+
+        @include tablette {
+            font-size: 1.5rem;
+        }
+    }
+    & .btn {
+        @include tablette {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include laptop {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}
 

@@ -27,7 +27,7 @@
             <div class="location__logo">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div>
+            <div>               
                 <form  method="post" action="traitement.php">               
                     <input class="location__city" type="text" name="city" placeholder="Paris, Belleville" />       
                 </form>
@@ -35,9 +35,13 @@
        </div> 
 
        <div class="introduction">
+           <div class="introduction__text">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des retaurants d'exeption, séléctionnés par nos soins.</p>
-            <input class="btn" id="restaurants-explorer" type="button" value="Explorer nos restaurants"/>
+        </div>
+            <a href="#restaurants-explorer">
+            <input class="btn"  type="button" value="Explorer nos restaurants"/>
+            </a>
         </div>
     </section>
 
@@ -62,7 +66,7 @@
     </section>
 
     <section class="restaurants">
-        <h2 href="#restaurants-explorer">Restaurants</h2>
+        <h2  id="restaurants-explorer" >Restaurants</h2>
 
         <div class="restaurants__cards">
                   
