@@ -1,0 +1,27 @@
+// header //
+.logo-site {  
+    @include header;
+
+    @include mobile {
+        @include mobile-picture-size;
+        
+        #arrow {
+            position: absolute;
+            top:27px;
+            left: 24px;
+            size: 1.5rem;
+            color: black
+        }
+    }
+    @include tablette {
+        @include full-picture-size;
+
+        #arrow {
+            position: absolute;
+            top:30px;
+            left: 24px;
+            font-size: 1.5rem;
+            color: black
+        }
+    }
+}

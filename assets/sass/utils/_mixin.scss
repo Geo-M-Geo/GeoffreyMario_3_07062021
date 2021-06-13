@@ -1,0 +1,42 @@
+@mixin mobile-picture-size{
+    &__full{
+        display: none;
+    }
+    &__mobile{
+        display: block;
+    }   
+}
+
+@mixin full-picture-size{
+    &__full{
+        display: block;
+    }
+    &__mobile{
+        display: none;
+    }
+}
+
+@mixin header {
+        display: flex;
+        justify-content: center;
+        margin-top: 23px;
+}
+
+@mixin mobile {
+    @media all and (max-width: map-get($breakpoints, mobile-size )){
+        @content
+    }
+}
+
+@mixin tablette {
+    @media all and (min-width: map-get($breakpoints, tablet-size )){
+        @content
+    }
+}
+
+@mixin laptop {
+    @media all and (min-width: map-get($breakpoints, laptop-size )){
+        @content
+    }
+}
+

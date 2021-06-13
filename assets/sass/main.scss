@@ -1,12 +1,16 @@
 @import "./base/fonts";
 @import "./utils/variables";
-@import"./composants/button";
-.logo-site {
-    &__full {
-        display: none;
-    }
-    &__mobile {
-        display: block;
-    }
-}
+@import "./composants/button";
+@import "./utils/mixin"; 
+@import "./layout/header";
 
+
+
+
+
+
+
+
+
+
+// Location bar //

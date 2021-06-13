@@ -1,3 +1,10 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+
+
+$breakpoints: (
+    mobile-size: 767px,
+    tablet-size: 768px,
+    laptop-size: 1024px
+);

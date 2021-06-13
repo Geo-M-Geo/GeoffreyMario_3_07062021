@@ -15,11 +15,40 @@
   font-size: 1.5rem;
 }
 
-.logo-site__full {
-  display: none;
+.logo-site {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
 }
-.logo-site__mobile {
-  display: block;
+@media all and (max-width: 767px) {
+  .logo-site__full {
+    display: none;
+  }
+  .logo-site__mobile {
+    display: block;
+  }
+  .logo-site #arrow {
+    position: absolute;
+    top: 27px;
+    left: 24px;
+    size: 1.5rem;
+    color: black;
+  }
+}
+@media all and (min-width: 768px) {
+  .logo-site__full {
+    display: block;
+  }
+  .logo-site__mobile {
+    display: none;
+  }
+  .logo-site #arrow {
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    font-size: 1.5rem;
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
