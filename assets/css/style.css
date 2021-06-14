@@ -100,11 +100,6 @@ body {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .introduction {
   display: flex;
   flex-direction: column;
@@ -144,6 +139,40 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fonction h2 {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.fonction__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 267px;
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+.fonction ul {
+  list-style: none;
+}
+.fonction li {
+  display: flex;
+  flex-direction: row;
+}
+.fonction i {
+  justify-content: center;
+}
+.fonction h3 {
+  margin: 0;
+}
+.fonction p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

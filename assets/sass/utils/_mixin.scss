@@ -22,9 +22,6 @@
         margin: 23px auto 18px auto;
 }
 
-@mixin introduction-mobile {
-
-}
 
 @mixin mobile {
     @media all and (max-width: map-get($breakpoints, mobile-size )){
@@ -44,3 +41,11 @@
     }
 }
 
+@mixin button {
+    background-color: $primary-color;
+    border-radius: 40px;
+    color: white;
+    border: 1px solid $primary-color;
+    padding: 22px;
+    font-size: 1.1rem;
+}

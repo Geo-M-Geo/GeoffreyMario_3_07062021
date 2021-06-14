@@ -5,7 +5,7 @@
 @import "./layout/header";
 @import "./composants/button";
 @import "./pages/location-bar";
-
+@import "./pages/introduction";
 
 
 
@@ -17,44 +17,38 @@ body {
 
 }
 
-// introduction 
+// fonction // 
 
-.introduction {
+.fonction {
+    & h2 {
+        padding-top: 50px;
+        padding-left: 20px;
+        
+    }
+    &__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 43px;
-    padding-bottom: 56px;
-    background-color: $quaternary-color;
-    & h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 0 64px 0 64px; 
-        @include tablette {
-            font-size: 1.8rem;
-        }
+    justify-content: space-around;
+    height: 267px;
+    padding-top: 30px;
+    padding-bottom: 65px;
+    }
+    & ul {
+        list-style: none;
+
+    }
+    & li {
+        display: flex;
+        flex-direction: row;
+    }
+    & i {
+        justify-content: center;
+    }
+    &  h3 {
+        margin: 0;
     }
     & p {
-        font-size: 1.1rem;
-        text-align: center;
-        margin: 20px 36px 34px 36px;
-        opacity: 0.5;
-
-        @include tablette {
-            font-size: 1.5rem;
-        }
+        margin: 0;
     }
-    & .btn {
-        @include tablette {
-            font-size: 1.5rem;
-        }
-    }
-
-    @include laptop {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-
 }
 
