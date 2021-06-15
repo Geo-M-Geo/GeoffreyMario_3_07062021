@@ -22,6 +22,10 @@
         margin: 23px auto 18px auto;
 }
 
+@mixin margin-null {
+    margin: 0;
+}
+
 
 @mixin mobile {
     @media all and (max-width: map-get($breakpoints, mobile-size )){

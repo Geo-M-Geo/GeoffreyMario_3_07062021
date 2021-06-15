@@ -22,33 +22,38 @@ body {
 .fonction {
     & h2 {
         padding-top: 50px;
-        padding-left: 20px;
-        
+        padding-left: 20px;       
     }
-    &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 267px;
-    padding-top: 30px;
-    padding-bottom: 65px;
-    }
-    & ul {
-        list-style: none;
 
+    &__step {
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    & li {
+
+    &__step__card {
         display: flex;
         flex-direction: row;
+        background-color: $quaternary-color;
+        width: 320px;
+        
     }
-    & i {
-        justify-content: center;
-    }
-    &  h3 {
+
+    & h3 {
         margin: 0;
     }
+
     & p {
-        margin: 0;
+        margin:0;
     }
+
+    & i {
+        display: block;
+        width: 18px;
+    }
+
+
+
 }
 

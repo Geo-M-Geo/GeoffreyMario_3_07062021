@@ -150,29 +150,27 @@ body {
   padding-top: 50px;
   padding-left: 20px;
 }
-.fonction__list {
+.fonction__step {
+  height: 265px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 267px;
-  padding-top: 30px;
-  padding-bottom: 65px;
+  justify-content: space-between;
 }
-.fonction ul {
-  list-style: none;
-}
-.fonction li {
+.fonction__step__card {
   display: flex;
   flex-direction: row;
-}
-.fonction i {
-  justify-content: center;
+  background-color: #f6f6f6;
+  width: 320px;
 }
 .fonction h3 {
   margin: 0;
 }
 .fonction p {
   margin: 0;
+}
+.fonction i {
+  display: block;
+  width: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
