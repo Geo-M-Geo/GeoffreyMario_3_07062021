@@ -147,30 +147,56 @@ body {
 }
 
 .fonction h2 {
-  padding-top: 50px;
-  padding-left: 20px;
+  padding: 50px 0 0 20px;
+  margin-bottom: 0;
 }
 .fonction__step {
   height: 265px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px 0 65px 0;
 }
 .fonction__step__card {
   display: flex;
   flex-direction: row;
-  background-color: #f6f6f6;
-  width: 320px;
+  align-items: center;
 }
-.fonction h3 {
-  margin: 0;
+.fonction__step__card a {
+  text-decoration: none;
+  color: black;
 }
 .fonction p {
-  margin: 0;
+  position: relative;
+  right: -17px;
+  color: white;
+  padding: 6px 11px 6px 11px;
+  background-color: #9356DC;
+  border-radius: 20px;
 }
-.fonction i {
+.fonction__step__card__explanation {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  border-radius: 27px;
+  width: 320px;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 4px 4px 10px #e5e5e5;
+  font-size: 1em;
+}
+.fonction__step__card__explanation h3 {
+  margin: 0;
+  padding-left: 21px;
+}
+.fonction__step__card__explanation i {
   display: block;
   width: 18px;
+  padding-left: 34px;
+  opacity: 0.5;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=style.css.map */
