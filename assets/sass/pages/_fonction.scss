@@ -1,0 +1,79 @@
+// fonction // 
+
+.fonction {
+    & h2 { 
+        padding: 50px 0 0 20px;     
+        margin-bottom: 0;
+        @include tablette {
+            font-size: $heading-size-medium;
+        }
+        @include medium-tablette {
+            text-align: center;
+        }
+    }
+    &__step {
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0 65px 0;
+        margin-right: 10px;
+        @include tablette {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 20px;
+        }
+    }
+
+    &__step__card {
+        display: flex;
+        flex-direction: row;   
+        align-items: center; 
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    & p {
+        position: relative;
+        right: -17px;
+        color: white;
+        padding: 6px 11px 6px 11px;
+        background-color: $primary-color;
+        border-radius: 20px;
+    }
+    &__step__card__explanation {
+        display: flex;
+        flex-direction: row;
+        background-color: $quaternary-color;
+        text-decoration: none;
+        border-radius: 27px;
+        min-width: 280px;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        box-shadow:4px 4px 10px $quinary-color;
+        font-size: 0.9em;
+        & h3 {
+            margin: 0;
+            padding-left: 18px;       
+        }
+        & i {
+            display: block;
+            width: 18px;
+            padding-left: 34px;
+            opacity: 0.5;
+            font-size: 1.3em;
+        }
+        &:hover {
+            background-color: #f5edff;
+            & i {
+                color: $primary-color;
+                opacity: 1;
+            }
+        }
+        @include tablette {
+            width: 350px;
+        }       
+    }
+}

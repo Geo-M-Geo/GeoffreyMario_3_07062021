@@ -22,6 +22,11 @@
         margin: 23px auto 18px auto;
 }
 
+@mixin small {
+    @media all and (min-width:map-get($breakpoints, small-size )){
+        @content
+}
+}
 
 @mixin mobile {
     @media all and (max-width: map-get($breakpoints, mobile-size )){
@@ -41,6 +46,11 @@
     }
 }
 
+@mixin medium-tablette {
+    @media all and (min-width :map-get($breakpoints, medium-size )){
+        @content
+    }
+}
 @mixin button {
     background-color: $primary-color;
     border-radius: 40px;

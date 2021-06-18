@@ -141,14 +141,19 @@ body {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .fonction h2 {
   padding: 50px 0 0 20px;
   margin-bottom: 0;
+}
+@media all and (min-width: 768px) {
+  .fonction h2 {
+    font-size: 1.8rem;
+  }
+}
+@media all and (min-width: 782px) {
+  .fonction h2 {
+    text-align: center;
+  }
 }
 .fonction__step {
   height: 265px;
@@ -156,6 +161,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 0 65px 0;
+  margin-right: 10px;
+}
+@media all and (min-width: 768px) {
+  .fonction__step {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
 }
 .fonction__step__card {
   display: flex;
@@ -180,16 +193,16 @@ body {
   background-color: #f6f6f6;
   text-decoration: none;
   border-radius: 27px;
-  width: 320px;
+  min-width: 280px;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
   box-shadow: 4px 4px 10px #e5e5e5;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .fonction__step__card__explanation h3 {
   margin: 0;
-  padding-left: 21px;
+  padding-left: 18px;
 }
 .fonction__step__card__explanation i {
   display: block;
@@ -197,6 +210,23 @@ body {
   padding-left: 34px;
   opacity: 0.5;
   font-size: 1.3em;
+}
+.fonction__step__card__explanation:hover {
+  background-color: #f5edff;
+}
+.fonction__step__card__explanation:hover i {
+  color: #9356DC;
+  opacity: 1;
+}
+@media all and (min-width: 768px) {
+  .fonction__step__card__explanation {
+    width: 350px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
