@@ -245,4 +245,33 @@ body {
   padding: 0;
 }
 
+.restaurants {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f6f6f6;
+  margin-right: 0;
+}
+.restaurants__title {
+  padding-top: 57px;
+}
+.restaurants__cards__info a {
+  text-decoration: none;
+}
+.restaurants__cards__info__img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.restaurants__cards__info__img__new {
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 85px;
+  text-align: center;
+  right: 15px;
+  top: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

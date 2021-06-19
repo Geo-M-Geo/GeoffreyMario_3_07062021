@@ -19,4 +19,36 @@ body {
 
 // Section Restaurants //
 
+.restaurants {
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $quaternary-color;
+    margin-right: 0;
 
+    &__title {
+        padding-top: 57px;
+    }
+    
+    &__cards__info a {
+        text-decoration: none;
+    }
+
+    &__cards__info__img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+
+        &__new {
+            background-color: #99e2d0;
+            color: #008766;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 85px;
+            text-align: center;
+            right: 15px;
+            top:0;
+           
+        }
+    }
+}
