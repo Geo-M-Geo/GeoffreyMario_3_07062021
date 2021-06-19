@@ -11,7 +11,7 @@
         font-size:$heading-size-mobile;
         text-align: center;
         margin: 0 64px 0 64px; 
-        @include tablette {
+        @include small-tablette {
             font-size: $heading-size-medium;
         }
     }
@@ -21,17 +21,18 @@
         margin: 20px 36px 34px 36px;
         opacity: 0.5;
 
-        @include tablette {
-            font-size: 1.5rem;
+        @include small-tablette {
+            font-size: $heading-size-mobile;
         }
     }
     & .btn {
-        @include tablette {
-            font-size: 1.5rem;
+        @include small-tablette {
+            font-size: $heading-size-mobile;
         }
     }
     @include laptop {
         flex-direction: row;
         justify-content: space-around;
+        padding-right: 30px;
     }
 }

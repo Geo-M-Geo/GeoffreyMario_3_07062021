@@ -22,20 +22,38 @@
         margin: 23px auto 18px auto;
 }
 
-@mixin small {
-    @media all and (min-width:map-get($breakpoints, small-size )){
-        @content
-}
-}
-
-@mixin mobile {
-    @media all and (max-width: map-get($breakpoints, mobile-size )){
+@mixin small-mobile {
+    @media all and (min-width:map-get($breakpoints, small-mobile-size )){
         @content
     }
 }
 
-@mixin tablette {
-    @media all and (min-width: map-get($breakpoints, tablet-size )){
+@mixin medium-mobile {
+    @media all and (min-width: map-get($breakpoints , medium-mobile-size )) {
+        @content
+    }
+}
+
+@mixin large-mobile {
+    @media all and (min-width:map-get($breakpoints, large-mobile-size )) {
+        @content
+    }
+}
+
+@mixin max-mobile {
+    @media all and (max-width: map-get($breakpoints, max-large-mobile-size )){
+        @content
+    }
+}
+
+@mixin small-tablette {
+    @media all and (min-width: map-get($breakpoints, small-tablette-size )){
+        @content
+    }
+}
+
+@mixin medium-tablette {
+    @media all and (min-width :map-get($breakpoints, medium-tablette-size )){
         @content
     }
 }
@@ -46,11 +64,6 @@
     }
 }
 
-@mixin medium-tablette {
-    @media all and (min-width :map-get($breakpoints, medium-size )){
-        @content
-    }
-}
 @mixin button {
     background-color: $primary-color;
     border-radius: 40px;

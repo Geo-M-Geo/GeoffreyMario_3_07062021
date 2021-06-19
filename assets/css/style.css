@@ -138,6 +138,7 @@ body {
   .introduction {
     flex-direction: row;
     justify-content: space-around;
+    padding-right: 30px;
   }
 }
 
@@ -150,7 +151,7 @@ body {
     font-size: 1.8rem;
   }
 }
-@media all and (min-width: 782px) {
+@media all and (min-width: 425px) {
   .fonction h2 {
     text-align: center;
   }
@@ -170,6 +171,11 @@ body {
     margin-right: 20px;
   }
 }
+@media all and (min-width: 782px) {
+  .fonction__step {
+    justify-content: space-evenly;
+  }
+}
 .fonction__step__card {
   display: flex;
   flex-direction: row;
@@ -178,6 +184,11 @@ body {
 .fonction__step__card a {
   text-decoration: none;
   color: black;
+}
+@media all and (min-width: 320px) {
+  .fonction__step__card {
+    justify-content: center;
+  }
 }
 .fonction p {
   position: relative;
@@ -193,12 +204,17 @@ body {
   background-color: #f6f6f6;
   text-decoration: none;
   border-radius: 27px;
-  min-width: 280px;
+  min-width: 270px;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
   box-shadow: 4px 4px 10px #e5e5e5;
   font-size: 0.9em;
+}
+@media all and (min-width: 375px) {
+  .fonction__step__card__explanation {
+    min-width: 325px;
+  }
 }
 .fonction__step__card__explanation h3 {
   margin: 0;
