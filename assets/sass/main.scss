@@ -29,6 +29,34 @@ body {
         padding-top: 57px;
     }
     
+    &__cards {
+        padding-bottom: 63px;
+        height: 1056px;
+    }
+    &__cards__info {
+        position: relative;
+        max-width: 335px;
+        background-color: white;
+
+        &__description {
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & i {
+                padding-right: 25px;
+                padding-top: 23px;
+                font-size: 1.4rem;
+                stroke-width: 0.5px;
+            }
+
+        &__text {
+            padding-left: 14px;
+        }
+        }
+    }
+
     &__cards__info a {
         text-decoration: none;
     }
@@ -36,19 +64,30 @@ body {
     &__cards__info__img {
         max-width: 100%;
         height: auto;
-        position: relative;
+        border-radius: 15px 15px 0 0;
 
         &__new {
             background-color: #99e2d0;
             color: #008766;
             border-radius: 5px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 8px 10px;
             width: 85px;
             text-align: center;
-            right: 15px;
-            top:0;
+            font-size: 0.8rem;
+            position: absolute;
+            margin:0;
+            top:10px;
+            right: 10px;
+            @include medium-mobile {
+                font-size: 1rem;
+                padding: 8px 12px;
+
+            }
            
         }
+
     }
-}
+    
+    
+    }
+

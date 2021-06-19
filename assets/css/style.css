@@ -254,24 +254,56 @@ body {
 .restaurants__title {
   padding-top: 57px;
 }
+.restaurants__cards {
+  padding-bottom: 63px;
+  height: 1056px;
+}
+.restaurants__cards__info {
+  position: relative;
+  max-width: 335px;
+  background-color: white;
+}
+.restaurants__cards__info__description {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurants__cards__info__description i {
+  padding-right: 25px;
+  padding-top: 23px;
+  font-size: 1.4rem;
+  stroke-width: 0.5px;
+}
+.restaurants__cards__info__description__text {
+  padding-left: 14px;
+}
 .restaurants__cards__info a {
   text-decoration: none;
 }
 .restaurants__cards__info__img {
   max-width: 100%;
   height: auto;
-  position: relative;
+  border-radius: 15px 15px 0 0;
 }
 .restaurants__cards__info__img__new {
   background-color: #99e2d0;
   color: #008766;
   border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 8px 10px;
   width: 85px;
   text-align: center;
-  right: 15px;
-  top: 0;
+  font-size: 0.8rem;
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  right: 10px;
+}
+@media all and (min-width: 375px) {
+  .restaurants__cards__info__img__new {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
