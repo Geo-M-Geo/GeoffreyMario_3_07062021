@@ -3,6 +3,7 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $quaternary-color: #f6f6f6;
 $quinary-color: #e5e5e5;
+$senary-color: #353535;
 
 $heading-size-mobile:1.5rem;
 $heading-size-medium:1.8rem;
@@ -11,6 +12,7 @@ $breakpoints: (
     small-mobile-size: 320px,
     medium-mobile-size: 375px,
     large-mobile-size: 425px,
+    extra-large-mobile-size:710px,
     max-large-mobile-size: 767px,
     small-tablette-size: 768px,
     medium-tablette-size: 782px,

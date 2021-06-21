@@ -40,6 +40,12 @@
     }
 }
 
+@mixin extra-large-mobile {
+    @media all and (min-width:map-get($breakpoints, extra-large-mobile-size )){
+        @content
+    }
+}
+
 @mixin max-mobile {
     @media all and (max-width: map-get($breakpoints, max-large-mobile-size )){
         @content

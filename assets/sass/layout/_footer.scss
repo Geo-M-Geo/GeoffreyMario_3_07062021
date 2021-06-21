@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+}
+footer {
+    background-color: $senary-color;
+    color: white;
+    font-size: 1.1em;
+    padding-top:26px;
+    padding-left:24px;
+    padding-bottom: 36px;
+    padding-right: 24px;
+    & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 93px;
+        padding-top: 28px;
+
+        @include large-mobile {
+            flex-direction: inherit;
+            flex-wrap: wrap;
+        }
+        & li {
+            list-style-type: none;
+        }
+    }
+
+    & a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        font-size: 0.8em;
+
+        & i {
+            width: 22px;
+        }
+        & p {
+           padding-left: 12px;
+        }
+    }
+    
+}
+
+.footer-title {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    
+}
