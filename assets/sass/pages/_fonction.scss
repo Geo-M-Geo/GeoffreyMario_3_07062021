@@ -26,6 +26,10 @@
         @include medium-tablette {
             justify-content: space-evenly;
         }
+
+        @include large-laptop {
+            height: auto;
+        }
     }
 
     &__step__card {

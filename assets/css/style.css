@@ -176,6 +176,11 @@ body {
     justify-content: space-evenly;
   }
 }
+@media all and (min-width: 1163px) {
+  .fonction__step {
+    height: auto;
+  }
+}
 .fonction__step__card {
   display: flex;
   flex-direction: row;
@@ -254,32 +259,37 @@ body {
 .restaurants__title {
   padding-top: 57px;
 }
+@media all and (min-width: 375px) {
+  .restaurants__title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 .restaurants__cards {
   padding-bottom: 63px;
-  height: 1056px;
+  height: 1119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 375px) {
+  .restaurants__cards {
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    height: auto;
+  }
 }
 .restaurants__cards__info {
   position: relative;
   max-width: 335px;
   background-color: white;
+  border-radius: 15px 15px 15px 15px;
 }
-.restaurants__cards__info__description {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.restaurants__cards__info__description i {
-  padding-right: 25px;
-  padding-top: 23px;
-  font-size: 1.4rem;
-  stroke-width: 0.5px;
-}
-.restaurants__cards__info__description__text {
-  padding-left: 14px;
-}
-.restaurants__cards__info a {
-  text-decoration: none;
+@media all and (min-width: 375px) {
+  .restaurants__cards__info {
+    margin-bottom: 20px;
+  }
 }
 .restaurants__cards__info__img {
   max-width: 100%;
@@ -304,6 +314,31 @@ body {
     font-size: 1rem;
     padding: 8px 12px;
   }
+}
+.restaurants__cards__info a {
+  text-decoration: none;
+}
+.restaurants__cards__info__description {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 18px 18px 12px;
+}
+.restaurants__cards__info__description i {
+  padding-top: 5px;
+  font-size: 1.4rem;
+  stroke-width: 0.5px;
+}
+.restaurants__cards__info__description__text {
+  padding-left: 14px;
+}
+.restaurants__cards__info__description__text h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.restaurants__cards__info__description__text p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
