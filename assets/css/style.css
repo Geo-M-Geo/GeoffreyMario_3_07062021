@@ -147,7 +147,7 @@ body {
     font-size: 1.8rem;
   }
 }
-@media all and (min-width: 425px) {
+@media all and (min-width: 375px) {
   .fonction h2 {
     text-align: center;
   }
@@ -191,7 +191,13 @@ body {
     justify-content: center;
   }
 }
-.fonction p {
+@media all and (min-width: 1163px) {
+  .fonction__step__card {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.fonction__step__card p {
   position: relative;
   right: -17px;
   color: white;
@@ -249,11 +255,18 @@ body {
 }
 .restaurants__title {
   padding-top: 57px;
+  padding-bottom: 27px;
 }
 @media all and (min-width: 375px) {
   .restaurants__title {
     text-align: center;
     padding-bottom: 20px;
+  }
+}
+@media all and (min-width: 1163px) {
+  .restaurants__title {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .restaurants__cards {
@@ -338,6 +351,11 @@ body {
   padding: 0;
 }
 
+.footer-title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -347,6 +365,14 @@ footer {
   padding-bottom: 36px;
   padding-right: 24px;
 }
+@media all and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 footer ul {
   display: flex;
   flex-direction: column;
@@ -354,16 +380,18 @@ footer ul {
   height: 93px;
   padding-top: 28px;
 }
-@media all and (min-width: 425px) {
+@media all and (min-width: 710px) {
   footer ul {
-    flex-direction: inherit;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 665px;
+    padding-top: 0;
+    align-items: center;
   }
 }
 footer ul li {
   list-style-type: none;
 }
-footer a {
+footer ul a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -371,16 +399,11 @@ footer a {
   font-weight: 300;
   font-size: 0.8em;
 }
-footer a i {
+footer ul a i {
   width: 22px;
 }
-footer a p {
+footer ul a p {
   padding-left: 12px;
-}
-
-.footer-title {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,12 @@
     margin: 0;
     padding:0;
 }
+
+.footer-title {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+}
+
 footer {
     background-color: $senary-color;
     color: white;
@@ -10,6 +16,13 @@ footer {
     padding-left:24px;
     padding-bottom: 36px;
     padding-right: 24px;
+
+    @include laptop {
+        display: flex;
+        flex-direction: row;      
+        justify-content: space-between;
+        align-items: center;
+    }
     & ul {
         display: flex;
         flex-direction: column;
@@ -17,35 +30,34 @@ footer {
         height: 93px;
         padding-top: 28px;
 
-        @include large-mobile {
-            flex-direction: inherit;
-            flex-wrap: wrap;
+        @include extra-large-mobile {
+            flex-direction: row;
+            width: 665px;
+            padding-top: 0;
+            align-items: center;
         }
+        
         & li {
             list-style-type: none;
-        }
-    }
 
-    & a {
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        color: white;
-        font-weight: 300;
-        font-size: 0.8em;
-
-        & i {
-            width: 22px;
+           
         }
-        & p {
-           padding-left: 12px;
+        & a {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            font-size: 0.8em;
+            
+           
+            & i {
+                width: 22px;
+            }
+            & p {
+               padding-left: 12px;
+            }
         }
-    }
-    
+    }  
 }
 
-.footer-title {
-    font-family: 'Shrikhand', sans-serif;
-    font-weight: 400;
-    
-}

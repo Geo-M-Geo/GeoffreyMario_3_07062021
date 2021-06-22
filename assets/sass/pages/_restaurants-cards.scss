@@ -8,9 +8,15 @@
     
     &__title {
         padding-top: 57px;
+        padding-bottom: 27px;
         @include medium-mobile {
             text-align: center;
             padding-bottom: 20px;
+        }
+
+        @include large-laptop {
+            padding-top:60px;
+            padding-bottom: 60px;
         }
     }    
     

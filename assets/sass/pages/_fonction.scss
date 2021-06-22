@@ -7,7 +7,7 @@
         @include small-tablette {
             font-size: $heading-size-medium;
         }
-        @include large-mobile {
+        @include medium-mobile {
             text-align: center;
         }
     }
@@ -43,51 +43,57 @@
         @include small-mobile {
             justify-content: center;
         }
-    }
-    & p {
-        position: relative;
-        right: -17px;
-        color: white;
-        padding: 6px 11px 6px 11px;
-        background-color: $primary-color;
-        border-radius: 20px;
-    }
-    &__step__card__explanation {
-        display: flex;
-        flex-direction: row;
-        background-color: $quaternary-color;
-        text-decoration: none;
-        border-radius: 27px;
-        min-width: 270px;
-        align-items: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        box-shadow:4px 4px 10px $quinary-color;
-        font-size: 0.9em;
-        @include medium-mobile {
-            min-width: 325px;
+        
+        @include large-laptop {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    
+        & p {
+            position: relative;
+            right: -17px;
+            color: white;
+            padding: 6px 11px 6px 11px;
+            background-color: $primary-color;
+            border-radius: 20px;
+        }
+        &__explanation {
+            display: flex;
+            flex-direction: row;
+            background-color: $quaternary-color;
+            text-decoration: none;
+            border-radius: 27px;
+            min-width: 270px;
+            align-items: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            box-shadow:4px 4px 10px $quinary-color;
+            font-size: 0.9em;
+            @include medium-mobile {
+                min-width: 325px;
 
-        }
-        & h3 {
-            margin: 0;
-            padding-left: 18px;       
-        }
-        & i {
-            display: block;
-            width: 18px;
-            padding-left: 34px;
-            opacity: 0.5;
-            font-size: 1.3em;
-        }
-        &:hover {
-            background-color: #f5edff;
-            & i {
-                color: $primary-color;
-                opacity: 1;
             }
+            & h3 {
+                margin: 0;
+                padding-left: 18px;       
+            }
+            & i {
+                display: block;
+                width: 18px;
+                padding-left: 34px;
+                opacity: 0.5;
+                font-size: 1.3em;
+            }
+            &:hover {
+                background-color: #f5edff;
+                & i {
+                    color: $primary-color;
+                    opacity: 1;
+                }
+            }
+            @include small-tablette {
+                width: 350px;
+            }       
         }
-        @include small-tablette {
-            width: 350px;
-        }       
     }
 }
