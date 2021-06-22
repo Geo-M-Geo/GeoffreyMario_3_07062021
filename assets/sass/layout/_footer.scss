@@ -16,7 +16,6 @@ footer {
     padding-left:24px;
     padding-bottom: 36px;
     padding-right: 24px;
-
     @include laptop {
         display: flex;
         flex-direction: row;      
@@ -36,11 +35,8 @@ footer {
             padding-top: 0;
             align-items: center;
         }
-        
         & li {
-            list-style-type: none;
-
-           
+            list-style-type: none;           
         }
         & a {
             display: flex;
@@ -49,8 +45,7 @@ footer {
             color: white;
             font-weight: 300;
             font-size: 0.8em;
-            
-           
+                      
             & i {
                 width: 22px;
             }

@@ -10,7 +10,17 @@
 @import "./pages/restaurants-cards";
 @import "./layout/footer";
 
+// Page 1 section menu //
 
+.menu {
+    & img {
+        width: 100%;
+    }
+    &__title {
+        font-family: "Shrikhand", sans-serif;   
+    }
+    
+}
 
 
 

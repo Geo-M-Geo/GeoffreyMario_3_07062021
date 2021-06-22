@@ -406,4 +406,11 @@ footer ul a p {
   padding-left: 12px;
 }
 
+.menu img {
+  width: 100%;
+}
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
