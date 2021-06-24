@@ -147,7 +147,7 @@ body {
     font-size: 1.8rem;
   }
 }
-@media all and (min-width: 375px) {
+@media all and (min-width: 376px) {
   .fonction h2 {
     text-align: center;
   }
@@ -218,7 +218,7 @@ body {
   box-shadow: 4px 4px 10px #e5e5e5;
   font-size: 0.9em;
 }
-@media all and (min-width: 375px) {
+@media all and (min-width: 376px) {
   .fonction__step__card__explanation {
     min-width: 325px;
   }
@@ -257,7 +257,7 @@ body {
   padding-top: 57px;
   padding-bottom: 27px;
 }
-@media all and (min-width: 375px) {
+@media all and (min-width: 376px) {
   .restaurants__title {
     text-align: center;
     padding-bottom: 20px;
@@ -291,7 +291,7 @@ body {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
 }
-@media all and (min-width: 375px) {
+@media all and (min-width: 376px) {
   .restaurants__cards__info {
     margin-bottom: 20px;
   }
@@ -314,7 +314,7 @@ body {
   top: 10px;
   right: 10px;
 }
-@media all and (min-width: 375px) {
+@media all and (min-width: 376px) {
   .restaurants__cards__info__img__new {
     font-size: 1rem;
     padding: 8px 12px;
@@ -406,11 +406,75 @@ footer ul a p {
   padding-left: 12px;
 }
 
-.menu img {
+.menu__header {
+  position: relative;
+}
+@media all and (min-width: 376px) {
+  .menu__header {
+    position: inherit;
+  }
+}
+@media all and (min-width: 376px) {
+  .menu__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .menu__header img {
+    width: 375px;
+    border-radius: 14px;
+  }
+}
+@media all and (min-width: 768px) {
+  .menu__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #e5e5e5;
+  }
+  .menu__header img {
+    padding-left: 25px;
+  }
+}
+.menu__header__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f6f6f6;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 39px;
+  position: absolute;
+  bottom: -25px;
   width: 100%;
 }
-.menu__title {
+@media all and (min-width: 376px) {
+  .menu__header__title {
+    padding-top: 30px;
+    position: inherit;
+    background-color: inherit;
+  }
+}
+@media all and (min-width: 768px) {
+  .menu__header__title {
+    padding-top: 0;
+  }
+  .menu__header__title h2 {
+    font-size: 2em;
+  }
+}
+.menu__header__title h2 {
   font-family: "Shrikhand", sans-serif;
+}
+.menu__header__title i {
+  padding-left: 20px;
+}
+.menu__choice {
+  padding-top: 60px;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */
