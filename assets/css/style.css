@@ -453,7 +453,7 @@ footer ul a p {
 }
 .menu__header__title h2 {
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.7em;
   padding-right: 20px;
   padding-left: 20px;
   font-family: "Shrikhand", sans-serif;
@@ -482,23 +482,35 @@ footer ul a p {
   padding-top: 60px;
   background-color: #f6f6f6;
 }
-.menu__choice h3 {
-  padding-left: 20px;
+.menu__choice__plate h3 {
   font-size: 1em;
   font-weight: 400;
+  padding-bottom: 9px;
 }
-.menu__choice__barre {
+.menu__choice__plate__barre::after {
   padding-left: 20px;
-}
-.menu__choice__barre::after {
   content: "";
-  width: 40px;
+  width: 20px;
   height: 3px;
   background-color: #99E2D0;
   display: block;
 }
-.menu__choice__entre li {
+.menu__choice__plate__description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.menu__choice__plate li {
+  display: flex;
+  flex-direction: row;
   background-color: white;
+  min-width: 300px;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 12px;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,7 +61,7 @@
             
             & h2 {
                 font-weight: 500;
-                font-size: 1.8em;
+                font-size: 1.7em;
                 padding-right: 20px;
                 padding-left: 20px;
                 font-family: 'Shrikhand', sans-serif;
@@ -89,33 +89,47 @@
     &__choice {
         padding-top: 60px;
         background-color: $quaternary-color;
+        // padding-left: 14px;
+        // padding-right: 14px;
         
+        &__plate {
 
-        & h3 {
-            padding-left: 20px;
+            & h3 {
+
             font-size: 1em;
             font-weight: 400;
-        }
+            padding-bottom: 9px;
+            }
 
-        &__barre {
-            padding-left: 20px;
+            &__barre::after {
+                padding-left: 20px;
+                content:"";
+                width: 20px;
+                height: 3px;
+                background-color: $tertiary-color;
+                display: block;
+            }
 
-        }
+            &__description {
+                display: flex;
+                flex-direction: column;   
+                padding-top: 16px;
+                padding-bottom: 16px;           
+            }
 
-        &__barre::after {
-            content: "";
-            width: 40px;
-            height: 3px;
-            background-color: $tertiary-color;
-            display: block;
-        }
-
-        &__entre li {
-            background-color: white;
-        }
-    }
-
-        
+            & li {
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                min-width: 300px;
+                margin-top: 12px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 12px;
+                border-radius: 15px;
+            }                       
+        }   
+    }       
 }
 
 
