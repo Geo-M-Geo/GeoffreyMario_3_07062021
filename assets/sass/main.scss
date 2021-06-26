@@ -39,7 +39,7 @@
                 background-color: $quinary-color;
 
                 & img {
-                    padding-left: 25px;
+                    margin-left: 25px;
                 }
                 
                 
@@ -50,18 +50,31 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
             background-color: $quaternary-color;
-            justify-content: center;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             padding-top: 39px;
             position: absolute;
             bottom: -25px;
             width: 100%;
+            
+            & h2 {
+                font-weight: 500;
+                font-size: 1.8em;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-family: 'Shrikhand', sans-serif;
+            }
+            & i {
+                font-size: 1.5em;
+                padding-right: 38px;
+            }
             @include medium-mobile {
                padding-top: 30px; 
                position: inherit;
                background-color: inherit;
+               justify-content: center;
                
             }
             @include small-tablette {
@@ -70,23 +83,40 @@
                     font-size: 2em;
                 }
             }
-            
-
-            & h2 {
-                font-family: 'Shrikhand', sans-serif;
-            }
-
-            & i {
-                padding-left: 20px;
-            }
         }          
+    }
+
+    &__choice {
+        padding-top: 60px;
+        background-color: $quaternary-color;
+        
+
+        & h3 {
+            padding-left: 20px;
+            font-size: 1em;
+            font-weight: 400;
         }
 
-        &__choice {
-            padding-top: 60px;
-            background-color: $quaternary-color;
+        &__barre {
+            padding-left: 20px;
+
+        }
+
+        &__barre::after {
+            content: "";
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+            display: block;
+        }
+
+        &__entre li {
+            background-color: white;
         }
     }
+
+        
+}
 
 
 
