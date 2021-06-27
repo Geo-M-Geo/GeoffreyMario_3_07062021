@@ -40,11 +40,8 @@
 
                 & img {
                     margin-left: 25px;
-                }
-                
-                
-        }
-        
+                }                
+        }       
 
         &__title {
             display: flex;
@@ -89,8 +86,6 @@
     &__choice {
         padding-top: 60px;
         background-color: $quaternary-color;
-        // padding-left: 14px;
-        // padding-right: 14px;
         
         &__plate {
 
@@ -119,13 +114,19 @@
                 padding-top: 16px;
                 padding-bottom: 16px;  
                 
+                
                 & h4 {
                     font-size: 1.2em;
+                    text-overflow: '';
                 }
 
                 & p {
                     padding-top:10px;
-                }
+                    max-width: 270px;
+                    white-space: nowrap;  
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                                    }
             }
 
             &__price {
@@ -152,9 +153,7 @@
                     box-shadow:4px 4px 10px $quinary-color;
                 }                       
 
-
             }
-
         }   
     }       
 }
