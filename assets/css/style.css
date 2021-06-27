@@ -486,8 +486,10 @@ footer ul a p {
   font-size: 1em;
   font-weight: 400;
   padding-bottom: 9px;
+  margin-left: 19px;
 }
 .menu__choice__plate__barre::after {
+  margin-left: 19px;
   padding-left: 20px;
   content: "";
   width: 20px;
@@ -501,16 +503,32 @@ footer ul a p {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.menu__choice__plate li {
+.menu__choice__plate__description h4 {
+  font-size: 1.2em;
+}
+.menu__choice__plate__description p {
+  padding-top: 10px;
+}
+.menu__choice__plate__price {
+  padding: 40px 22px 15px 0;
+  font-weight: bold;
+  text-align: center;
+  align-self: end;
+}
+.menu__choice__plate ul {
+  padding-bottom: 45px;
+}
+.menu__choice__plate ul li {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: white;
-  min-width: 300px;
-  margin-top: 12px;
-  margin-left: 10px;
-  margin-right: 10px;
+  min-width: 290px;
+  max-width: 346px;
+  margin: 12px 10px 0 10px;
   padding-left: 12px;
   border-radius: 15px;
+  box-shadow: 4px 4px 10px #e5e5e5;
 }
 
 /*# sourceMappingURL=style.css.map */
