@@ -21,6 +21,8 @@
             position: inherit;
         }
 
+// Image du header responsive //
+
         &__mobile {
             display: block;
             border-radius: 14px;
@@ -44,56 +46,46 @@
 
             &__mobile {
                 width: 375px;
-                border-radius: 14px;
             }
+        }
 
+        @include small-extra-large-mobile{
+            &__mobile {
+                display: none ;
+            }
             &__tablette {
-                display: none;
+                display: block;
             }
-
+            
             &__laptop {
                 display: none;
             }
+        }
 
-            @include small-extra-large-mobile{
-                &__mobile {
-                    display: none ;
-                }
-                &__tablette {
-                    display: block;
-                    border-radius: 14px;
-                }
-                
-                &__laptop {
-                    display: none;
-                }
+        @include small-tablette {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: $septenary-color;
 
-            @include large-laptop {
-                &__mobile {
-                    display: none ;
-                }
-                &__tablette {
-                    display: none;
-                }
-                
-                &__laptop {
-                    display: block;
-                    border-radius: 14px;
-                }
+            & img {
+                margin-left: 25px;
+            }                
+        }
+
+        @include large-laptop {
+            &__mobile {
+                display: none ;
             }
-                
+            &__tablette {
+                display: none;
+            }
+            
+            &__laptop {
+                display: block;
+                border-radius: 14px;
             }
         }
-        @include small-tablette {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                background-color: $septenary-color;
-
-                & img {
-                    margin-left: 25px;
-                }                
-        }       
 
         &__title {
             display: flex;
