@@ -6,6 +6,9 @@
 .footer-title {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
+    @include large-laptop {
+            font-size: 1.4em;
+        }
 }
 
 footer {
@@ -34,10 +37,17 @@ footer {
             width: 665px;
             padding-top: 0;
             align-items: center;
+            @include large-laptop {
+                width: 800px;
+            }
         }
+        
         & li {
-            list-style-type: none;           
-        }
+            list-style-type: none;
+            @include large-laptop {
+                font-size: 1.4em;
+            }
+        }   
         & a {
             display: flex;
             flex-direction: row;
@@ -45,14 +55,17 @@ footer {
             color: white;
             font-weight: 300;
             font-size: 0.8em;
-                      
-            & i {
-                width: 22px;
-            }
-            & p {
-               padding-left: 12px;
+        }
+        & i {
+            width: 22px;
+            @include large-laptop {
+                font-size: 1.2em;
             }
         }
-    }  
+        & p {
+            padding-left: 12px;
+            
+        }           
+    } 
 }
 

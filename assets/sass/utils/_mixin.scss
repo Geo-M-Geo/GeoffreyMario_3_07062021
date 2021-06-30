@@ -82,6 +82,12 @@
     }
 }
 
+@mixin medium-laptop {
+    @media all and (min-width:map-get($breakpoints, medium-laptop-size )) {
+        @content
+    }
+}
+
 @mixin large-laptop {
     @media all and (min-width: map-get($breakpoints, large-laptop-size )){
         @content
