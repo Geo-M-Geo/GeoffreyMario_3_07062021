@@ -178,16 +178,12 @@ body {
   padding: 30px 0 65px 0;
   margin-right: 10px;
 }
-@media all and (min-width: 768px) {
-  .fonction__step {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 20px;
-  }
-}
 @media all and (min-width: 782px) {
   .fonction__step {
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
   }
 }
 @media all and (min-width: 1163px) {
@@ -256,6 +252,11 @@ body {
   margin: 0;
   padding-left: 18px;
 }
+@media all and (min-width: 768px) {
+  .fonction__step__card__explanation h3 {
+    font-size: 1.4em;
+  }
+}
 @media all and (min-width: 1024px) {
   .fonction__step__card__explanation h3 {
     font-size: 1.5rem;
@@ -323,6 +324,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    justify-content: space-evenly;
   }
 }
 @media all and (min-width: 1163px) {
@@ -490,6 +492,9 @@ footer ul p {
 .menu__header__laptop {
   display: none;
 }
+.menu__header__large__laptop {
+  display: none;
+}
 @media all and (min-width: 376px) {
   .menu__header {
     display: flex;
@@ -510,31 +515,32 @@ footer ul p {
     display: block;
     border-radius: 14px;
   }
-  .menu__header__laptop {
-    display: none;
-  }
 }
 @media all and (min-width: 768px) {
   .menu__header {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     background-color: #f1ebeb;
   }
-  .menu__header img {
-    margin-left: 25px;
-  }
 }
 @media all and (min-width: 1163px) {
-  .menu__header__mobile {
-    display: none;
-  }
   .menu__header__tablette {
     display: none;
   }
   .menu__header__laptop {
     display: block;
     border-radius: 14px;
+  }
+}
+@media all and (min-width: 1380px) {
+  .menu__header__laptop {
+    display: none;
+  }
+  .menu__header__large__laptop {
+    display: block;
+    border-radius: 14px;
+    width: 90%;
+    margin: 40px auto;
   }
 }
 .menu__header__title {
@@ -558,8 +564,9 @@ footer ul p {
   font-family: "Shrikhand", sans-serif;
 }
 @media all and (min-width: 768px) {
-  .menu__header__title h2 h2 {
+  .menu__header__title h2 {
     font-size: 2em;
+    padding-top: 20px;
   }
 }
 @media all and (min-width: 1163px) {
@@ -587,6 +594,13 @@ footer ul p {
 .menu__choice {
   padding-top: 60px;
   background-color: #f6f6f6;
+}
+@media all and (min-width: 1134px) {
+  .menu__choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media all and (min-width: 620px) {
   .menu__choice__plate__title {
@@ -773,6 +787,7 @@ footer ul p {
   display: flex;
   justify-content: center;
   padding-bottom: 58px;
+  background-color: #f6f6f6;
 }
 .menu__button .btn {
   padding: 18px 0;

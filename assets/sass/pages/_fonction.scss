@@ -21,13 +21,12 @@
         justify-content: space-between;
         padding: 30px 0 65px 0;
         margin-right: 10px;
-        @include small-tablette {
+
+        @include medium-tablette {
+            justify-content: space-evenly;
             flex-direction: row;
             flex-wrap: wrap;
             margin-right: 20px;
-        }
-        @include medium-tablette {
-            justify-content: space-evenly;
         }
 
         @include large-laptop {
@@ -84,12 +83,12 @@
             @include laptop{
                 width: 400px;
             }
-            // @include extra-large-laptop {
-            //     width: 450px;
-            // }
             & h3 {
                 margin: 0;
                 padding-left: 18px;
+                @include small-tablette{
+                    font-size: 1.4em;
+                }
                 @include laptop{
                     font-size: $heading-size-mobile;
                 }       
