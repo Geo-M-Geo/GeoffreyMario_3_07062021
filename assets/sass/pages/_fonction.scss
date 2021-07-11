@@ -10,6 +10,9 @@
         @include medium-mobile {
             text-align: center;
         }
+        @include laptop{
+            font-size: $heading-size-large;
+        }
     }
     &__step {
         height: 265px;
@@ -30,6 +33,10 @@
         @include large-laptop {
             height: auto;
         }
+        @include xxl-laptop{
+            width: 1420px;
+            margin: 20px auto 20px auto;
+        }
     }
 
     &__step__card {
@@ -48,6 +55,7 @@
             padding-top: 40px;
             padding-bottom: 40px;
         }
+        
     
         & p {
             position: relative;
@@ -67,16 +75,26 @@
             align-items: center;
             padding-top: 25px;
             padding-bottom: 25px;
-            box-shadow:4px 4px 10px $quinary-color;
+            box-shadow:1px 1px 20px $quinary-color;
             font-size: 0.9em;
             @include medium-mobile {
                 min-width: 325px;
 
             }
+            @include laptop{
+                width: 400px;
+            }
+            // @include extra-large-laptop {
+            //     width: 450px;
+            // }
             & h3 {
                 margin: 0;
-                padding-left: 18px;       
+                padding-left: 18px;
+                @include laptop{
+                    font-size: $heading-size-mobile;
+                }       
             }
+            
             & i {
                 display: block;
                 width: 18px;
@@ -86,9 +104,11 @@
             }
             &:hover {
                 background-color: #f5edff;
+                box-shadow:1px 1px 20px $primary-color;
                 & i {
                     color: $primary-color;
                     opacity: 1;
+                    
                 }
             }
             @include small-tablette {

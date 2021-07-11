@@ -15,6 +15,7 @@ body {
   padding: 22px;
   font-size: 1.1rem;
   box-shadow: 0px 0px 10px #bbbbbb;
+  cursor: pointer;
 }
 
 .logo-site {
@@ -61,6 +62,7 @@ body {
   padding: 22px;
   font-size: 1.1rem;
   box-shadow: 0px 0px 10px #bbbbbb;
+  cursor: pointer;
 }
 
 .location {
@@ -116,6 +118,11 @@ body {
     font-size: 1.8rem;
   }
 }
+@media all and (min-width: 1024px) {
+  .introduction h1 {
+    font-size: 2rem;
+  }
+}
 .introduction p {
   font-size: 1.1rem;
   text-align: center;
@@ -127,16 +134,20 @@ body {
     font-size: 1.5rem;
   }
 }
+@media all and (min-width: 1024px) {
+  .introduction p {
+    margin: 40px auto 60px auto;
+    font-size: 1.8rem;
+  }
+}
 @media all and (min-width: 768px) {
   .introduction .btn {
     font-size: 1.5rem;
   }
 }
-@media all and (min-width: 1024px) {
-  .introduction {
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 30px;
+@media all and (min-width: 768px) and (min-width: 1024px) {
+  .introduction .btn {
+    font-size: 1.8rem;
   }
 }
 
@@ -152,6 +163,11 @@ body {
 @media all and (min-width: 376px) {
   .fonction h2 {
     text-align: center;
+  }
+}
+@media all and (min-width: 1024px) {
+  .fonction h2 {
+    font-size: 2rem;
   }
 }
 .fonction__step {
@@ -177,6 +193,12 @@ body {
 @media all and (min-width: 1163px) {
   .fonction__step {
     height: auto;
+  }
+}
+@media all and (min-width: 1420px) {
+  .fonction__step {
+    width: 1420px;
+    margin: 20px auto 20px auto;
   }
 }
 .fonction__step__card {
@@ -217,7 +239,7 @@ body {
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  box-shadow: 4px 4px 10px #e5e5e5;
+  box-shadow: 1px 1px 20px #e5e5e5;
   font-size: 0.9em;
 }
 @media all and (min-width: 376px) {
@@ -225,9 +247,19 @@ body {
     min-width: 325px;
   }
 }
+@media all and (min-width: 1024px) {
+  .fonction__step__card__explanation {
+    width: 400px;
+  }
+}
 .fonction__step__card__explanation h3 {
   margin: 0;
   padding-left: 18px;
+}
+@media all and (min-width: 1024px) {
+  .fonction__step__card__explanation h3 {
+    font-size: 1.5rem;
+  }
 }
 .fonction__step__card__explanation i {
   display: block;
@@ -238,6 +270,7 @@ body {
 }
 .fonction__step__card__explanation:hover {
   background-color: #f5edff;
+  box-shadow: 1px 1px 20px #9356DC;
 }
 .fonction__step__card__explanation:hover i {
   color: #9356DC;
@@ -265,6 +298,11 @@ body {
     padding-bottom: 20px;
   }
 }
+@media all and (min-width: 1024px) {
+  .restaurants__title {
+    font-size: 1.8rem;
+  }
+}
 @media all and (min-width: 1163px) {
   .restaurants__title {
     padding-top: 60px;
@@ -285,6 +323,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+  }
+}
+@media all and (min-width: 1163px) {
+  .restaurants__cards {
+    justify-content: space-evenly;
   }
 }
 .restaurants__cards__info {
@@ -537,6 +580,10 @@ footer ul p {
   }
 }
 
+.menu {
+  transition: transform 400ms;
+  transform: scaleY();
+}
 .menu__choice {
   padding-top: 60px;
   background-color: #f6f6f6;
@@ -598,6 +645,18 @@ footer ul p {
 .menu__choice__plate__description h4 {
   font-size: 1.2em;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media all and (min-width: 320px) {
+  .menu__choice__plate__description h4 {
+    max-width: 260px;
+  }
+}
+@media all and (min-width: 340px) {
+  .menu__choice__plate__description h4 {
+    max-width: none;
+  }
 }
 @media all and (min-width: 620px) {
   .menu__choice__plate__description h4 {
@@ -645,6 +704,15 @@ footer ul p {
     font-size: 1.2em;
   }
 }
+.menu__choice__plate .check {
+  transition: all 1000ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
+  height: 84px;
+  border-radius: 0 15px 15px 0;
+  padding: 0;
+  margin: 0;
+}
 .menu__choice__plate ul {
   padding-bottom: 45px;
 }
@@ -676,6 +744,12 @@ footer ul p {
   padding-left: 12px;
   border-radius: 15px;
   box-shadow: 4px 4px 10px #e5e5e5;
+  cursor: pointer;
+}
+.menu__choice__plate li:active > .check {
+  transform: scaleX(1);
+  background: #99e2d0;
+  width: 70px;
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate li {

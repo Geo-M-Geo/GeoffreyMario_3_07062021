@@ -8,6 +8,7 @@ $septenary-color:#f1ebeb;
 
 $heading-size-mobile:1.5rem;
 $heading-size-medium:1.8rem;
+$heading-size-large:2rem;
 
 $breakpoints: (
     small-mobile-size: 320px,
@@ -21,5 +22,7 @@ $breakpoints: (
     medium-tablette-size: 782px,
     laptop-size: 1024px,
     medium-laptop-size:1134px,
-    large-laptop-size: 1163px
+    large-laptop-size: 1163px,
+    extra-large-laptop-size: 1380px,
+    xxl-laptop-size:1420px
 );

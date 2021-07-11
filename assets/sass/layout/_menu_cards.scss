@@ -1,5 +1,8 @@
 .menu{
 
+    transition: transform 400ms;
+    transform: scaleY();
+
     &__choice {
         padding-top: 60px;
         background-color: $quaternary-color;
@@ -56,10 +59,18 @@
                 
                 & h4 {
                     font-size: 1.2em;
-                    white-space: nowrap;
+                    white-space: nowrap;  
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    @include small-mobile {
+                        max-width: 260px;
+                    }
+                    @include small-medium-mobile {
+                        max-width: none;
+                    }
                     @include small-extra-large-mobile {
                         font-size: 1.4em;
-                    }
+                    }                    
                     @include large-laptop {
                         font-size: 1.6em;
                         white-space: inherit;
@@ -94,8 +105,21 @@
                     padding-bottom: 27px;
                     font-size: 1.2em;
                 }
+                
             }
-
+            
+            & .check {
+                // display: none;
+                transition: all 1000ms ease-in-out;
+                transform: scaleX(0);
+                transform-origin: right;
+                height: 84px;
+                border-radius: 0 15px 15px 0;
+                padding: 0;
+                margin: 0;
+                
+                
+            }
             & ul {
                 padding-bottom: 45px;
 
@@ -123,6 +147,15 @@
                 padding-left: 12px;
                 border-radius: 15px;
                 box-shadow:4px 4px 10px $quinary-color;
+                cursor:pointer;
+                &:active > .check {
+                    // display: block;
+                    transform:scaleX(1); 
+                    background: #99e2d0;
+                    width: 70px;
+                    }
+                    
+                
 
                 @include medium-mobile {
                     width: 349px;

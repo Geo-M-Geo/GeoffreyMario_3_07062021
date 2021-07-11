@@ -14,6 +14,9 @@
         @include small-tablette {
             font-size: $heading-size-medium;
         }
+        @include laptop{
+            font-size: $heading-size-large;
+        }
     }
     & p {
         font-size: 1.1rem;
@@ -24,15 +27,18 @@
         @include small-tablette {
             font-size: $heading-size-mobile;
         }
+
+        @include laptop{
+            margin: 40px auto 60px auto;
+            font-size: $heading-size-medium;
+        }
     }
     & .btn {
         @include small-tablette {
             font-size: $heading-size-mobile;
+        @include laptop {
+            font-size: $heading-size-medium;
         }
-    }
-    @include laptop {
-        flex-direction: row;
-        justify-content: space-around;
-        padding-right: 30px;
+        }
     }
 }
