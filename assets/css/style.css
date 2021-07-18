@@ -473,90 +473,29 @@ footer ul p {
   padding-left: 12px;
 }
 
-.menu__header {
-  position: relative;
-}
-@media all and (min-width: 376px) {
-  .menu__header {
-    position: inherit;
-  }
-}
-.menu__header__mobile {
-  display: block;
-  border-radius: 14px;
+.picture-restaurant__image {
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
 }
-.menu__header__tablette {
-  display: none;
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  margin-top: -50px;
 }
-.menu__header__laptop {
-  display: none;
-}
-.menu__header__large__laptop {
-  display: none;
-}
-@media all and (min-width: 376px) {
-  .menu__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .menu__header__mobile {
-    width: 375px;
-  }
-}
-@media all and (min-width: 620px) {
-  .menu__header__mobile {
-    display: none;
-  }
-  .menu__header__tablette {
-    display: block;
-    border-radius: 14px;
-  }
-}
-@media all and (min-width: 768px) {
-  .menu__header {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f1ebeb;
-  }
-}
-@media all and (min-width: 1163px) {
-  .menu__header__tablette {
-    display: none;
-  }
-  .menu__header__laptop {
-    display: block;
-    border-radius: 14px;
-  }
-}
-@media all and (min-width: 1380px) {
-  .menu__header__laptop {
-    display: none;
-  }
-  .menu__header__large__laptop {
-    display: block;
-    border-radius: 14px;
-    width: 90%;
-    margin: 40px auto;
-  }
-}
-.menu__header__title {
+.menu__title {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #f6f6f6;
+  background: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding-top: 39px;
-  position: absolute;
-  bottom: -25px;
-  width: 100%;
 }
-.menu__header__title h2 {
+.menu__title h2 {
   font-weight: 500;
   font-size: 1.7em;
   padding-right: 20px;
@@ -564,36 +503,27 @@ footer ul p {
   font-family: "Shrikhand", sans-serif;
 }
 @media all and (min-width: 768px) {
-  .menu__header__title h2 {
+  .menu__title h2 {
     font-size: 2em;
-    padding-top: 20px;
   }
 }
 @media all and (min-width: 1163px) {
-  .menu__header__title h2 {
+  .menu__title h2 {
     font-size: 3em;
   }
 }
-.menu__header__title i {
+.menu__title i {
   font-size: 1.5em;
   padding-right: 38px;
 }
 @media all and (min-width: 376px) {
-  .menu__header__title {
+  .menu__title {
     padding-top: 30px;
-    position: inherit;
-    background-color: inherit;
     justify-content: center;
   }
 }
-
-.menu {
-  transition: transform 400ms;
-  transform: scaleY();
-}
 .menu__choice {
-  padding-top: 60px;
-  background-color: #f6f6f6;
+  padding-top: 45px;
 }
 @media all and (min-width: 1134px) {
   .menu__choice {
@@ -759,11 +689,6 @@ footer ul p {
   border-radius: 15px;
   box-shadow: 4px 4px 10px #e5e5e5;
   cursor: pointer;
-}
-.menu__choice__plate li:active > .check {
-  transform: scaleX(1);
-  background: #99e2d0;
-  width: 70px;
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate li {

@@ -1,11 +1,45 @@
 .menu{
 
-    transition: transform 400ms;
-    transform: scaleY();
+    display: flex;
+    flex-direction: column;
+    background-color: $quaternary-color;   
+    margin-top: -50px;
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: $quaternary-color;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding-top: 39px;
+        
+        & h2 {
+            font-weight: 500;
+            font-size: 1.7em;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: 'Shrikhand', sans-serif;
+            @include small-tablette {
+                    font-size: 2em;
+                }
+            @include large-laptop {
+                font-size: 3em;
+            }
+        }
+        & i {
+            font-size: 1.5em;
+            padding-right: 38px;
+        }
+        @include medium-mobile {
+           padding-top: 30px; 
+           justify-content: center;
+           
+        }                      
+    } 
 
     &__choice {
-        padding-top: 60px;
-        background-color: $quaternary-color;
+        padding-top: 45px;
         @include medium-laptop {
             display: flex;
             flex-wrap: wrap;
@@ -113,16 +147,13 @@
             }
             
             & .check {
-                // display: none;
                 transition: all 1000ms ease-in-out;
                 transform: scaleX(0);
                 transform-origin: right;
                 height: 84px;
                 border-radius: 0 15px 15px 0;
                 padding: 0;
-                margin: 0;
-                
-                
+                margin: 0;                
             }
             & ul {
                 padding-bottom: 45px;
@@ -152,12 +183,12 @@
                 border-radius: 15px;
                 box-shadow:4px 4px 10px $quinary-color;
                 cursor:pointer;
-                &:active > .check {
-                    // display: block;
-                    transform:scaleX(1); 
-                    background: #99e2d0;
-                    width: 70px;
-                    }
+                // &:active > .check {
+
+                //     transform:scaleX(1); 
+                //     background: #99e2d0;
+                //     width: 70px;
+                //     }
                     
                 
 
