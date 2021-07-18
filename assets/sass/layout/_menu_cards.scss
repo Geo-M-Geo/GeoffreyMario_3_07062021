@@ -208,22 +208,23 @@
             }                       
         }
     }
+}
     
-    &__button {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 58px;
-        background-color: $quaternary-color;
+.order-button {
+        
+    display: flex;
+    justify-content: center;
+    padding-bottom: 58px;
+    background-color: $quaternary-color;
 
-        & .btn {
-            padding:18px 0;
-            width: 184px;
-            
-            @include large-laptop {
-                font-size: 1.5em;
-                width: 220px;
-                height: 80px;
-            }  
-        }       
-    }
+    & .btn {
+        padding:18px 0;
+        width: 184px;
+        
+        @include large-laptop {
+            font-size: 1.5em;
+            width: 220px;
+            height: 80px;
+        }  
+    }       
 }
