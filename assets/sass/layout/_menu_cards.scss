@@ -35,8 +35,33 @@
            padding-top: 30px; 
            justify-content: center;
            
-        }                      
-    } 
+        } 
+
+        &__heart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__container {
+
+                
+                    transform: scaleY(0);
+                    background-color: red;
+                    transform-origin: bottom;
+                    transition: transform 200ms;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        transform:scaleY(1);
+                    }
+                
+
+                
+            }
+        }
+    }
+    
+    
 
     &__choice {
         padding-top: 45px;

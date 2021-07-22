@@ -522,6 +522,21 @@ footer ul p {
     justify-content: center;
   }
 }
+.menu__title__heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__title__heart__container {
+  transform: scaleY(0);
+  background-color: red;
+  transform-origin: bottom;
+  transition: transform 200ms;
+  cursor: pointer;
+}
+.menu__title__heart__container:hover {
+  transform: scaleY(1);
+}
 .menu__choice {
   padding-top: 45px;
 }
