@@ -238,6 +238,14 @@ body {
   box-shadow: 1px 1px 20px #e5e5e5;
   font-size: 0.9em;
 }
+.fonction__step__card__explanation:hover {
+  background-color: #f5edff;
+  box-shadow: 1px 1px 20px #d2d2d2;
+}
+.fonction__step__card__explanation:hover i {
+  color: #9356DC;
+  opacity: 1;
+}
 @media all and (min-width: 376px) {
   .fonction__step__card__explanation {
     min-width: 325px;
@@ -269,18 +277,54 @@ body {
   opacity: 0.5;
   font-size: 1.3em;
 }
-.fonction__step__card__explanation:hover {
-  background-color: #f5edff;
-  box-shadow: 1px 1px 20px #9356DC;
-}
-.fonction__step__card__explanation:hover i {
-  color: #9356DC;
-  opacity: 1;
-}
 @media all and (min-width: 768px) {
   .fonction__step__card__explanation {
     width: 350px;
   }
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+.heart .heart__container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.heart .heart__container .heart__container__clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: url(#svgPath);
+}
+.heart .heart__container .heart__container__clip:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.heart .heart__container .heart__container__clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(to top, #9356DC, #ef74da);
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform-origin: center 50%;
+}
+.heart .heart__container .heart__container__stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: black;
 }
 
 .restaurants {
@@ -342,6 +386,9 @@ body {
   .restaurants__cards__info {
     margin-bottom: 20px;
   }
+}
+.restaurants__cards__info a {
+  color: black;
 }
 .restaurants__cards__info__img {
   max-width: 100%;
@@ -495,6 +542,12 @@ footer ul p {
   border-top-right-radius: 30px;
   padding-top: 39px;
 }
+@media all and (min-width: 1163px) {
+  .menu__title .heart__container {
+    width: 40px;
+    height: 40px;
+  }
+}
 .menu__title h2 {
   font-weight: 500;
   font-size: 1.7em;
@@ -521,21 +574,6 @@ footer ul p {
     padding-top: 30px;
     justify-content: center;
   }
-}
-.menu__title__heart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu__title__heart__container {
-  transform: scaleY(0);
-  background-color: red;
-  transform-origin: bottom;
-  transition: transform 200ms;
-  cursor: pointer;
-}
-.menu__title__heart__container:hover {
-  transform: scaleY(1);
 }
 .menu__choice {
   padding-top: 45px;
@@ -663,15 +701,6 @@ footer ul p {
     font-size: 1.2em;
   }
 }
-.menu__choice__plate .check {
-  transition: all 1000ms ease-in-out;
-  transform: scaleX(0);
-  transform-origin: right;
-  height: 84px;
-  border-radius: 0 15px 15px 0;
-  padding: 0;
-  margin: 0;
-}
 .menu__choice__plate ul {
   padding-bottom: 45px;
 }
@@ -704,6 +733,36 @@ footer ul p {
   border-radius: 15px;
   box-shadow: 4px 4px 10px #e5e5e5;
   cursor: pointer;
+  position: relative;
+}
+.menu__choice__plate li:hover .description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__choice__plate li:hover .check {
+  transform: scaleX(1);
+}
+.menu__choice__plate li:hover__price {
+  margin-right: 10px;
+}
+.menu__choice__plate li .check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scaleX(0);
+  transform-origin: right 50%;
+  transition: transform 1000ms;
+}
+.menu__choice__plate li .check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate li {
