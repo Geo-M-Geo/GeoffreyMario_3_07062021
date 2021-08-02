@@ -195,7 +195,7 @@
                 list-style: none;
 
 
-                @for $i from 1 through 9 {
+                @for $i from 1 through 10 {
                     .delay-#{$i} {
                         opacity: 0; 
                         animation: cards ease-in 600ms both;  
@@ -203,57 +203,6 @@
                         animation-delay: 300ms * $i;
                     }
                 }
-                // & .delay-1 {  
-                    
-                // }
-                // & .delay-2 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;  
-                //     transform-origin: top; 
-                //     animation-delay: 300ms;
-                // }
-                // & .delay-3 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;
-                //     transform-origin: top; 
-                //     animation-delay: 600ms;
-                // }
-                // & .delay-4 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both; 
-                //     transform-origin: top; 
-                //     animation-delay:  900ms;
-                // }
-                // & .delay-5 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;
-                //     transform-origin: top; 
-                //     animation-delay: 1200ms;
-                // }
-                // & .delay-6 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;
-                //     transform-origin: top; 
-                //     animation-delay:  1500ms;
-                // }
-                // & .delay-7 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;
-                //     transform-origin: top; 
-                //     animation-delay:  1800ms;
-                // }
-                // & .delay-8 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both;
-                //     transform-origin: top; 
-                //     animation-delay: 2100ms;
-                // }
-                // & .delay-9 {
-                //     opacity: 0;
-                //     animation: cards ease-in 1s both; 
-                //     transform-origin: top; 
-                //     animation-delay: 2400ms;
-                // }
                 
                 @keyframes cards {
                     0% {
