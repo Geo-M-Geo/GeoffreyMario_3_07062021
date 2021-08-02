@@ -94,51 +94,69 @@
 
             &__description {
                 display: flex;
-                flex-direction: column;   
-                padding-top: 16px;
-                padding-bottom: 16px;  
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: white;
+                min-width: 290px;
+                max-width: 370px;
+                margin:12px 10px 0 10px;
+                padding: 15px 0 15px 12px;
+                border-radius: 15px;
+                box-shadow:4px 4px 10px $quinary-color;
+                cursor:pointer;
+
+                @include small-extra-large-mobile {
+                    max-width: 550px;
+                }
                 @include large-laptop {
-                    padding-top:30px;
-                    padding-bottom: 30px;
+                    padding-top:20px;
+                    padding-bottom: 20px;
                 }
                 
-                & h4 {
-                    font-size: 1.2em;
-                    white-space: nowrap;  
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    @include small-mobile {
-                        max-width: 260px;
-                    }
-                    @include small-medium-mobile {
-                        max-width: none;
-                    }
-                    @include small-extra-large-mobile {
-                        font-size: 1.4em;
-                    }                    
-                    @include large-laptop {
-                        font-size: 1.6em;
-                        white-space: inherit;
-                    }
-                }
-
-                & p {
-                    padding-top:10px;
-                    max-width: 240px;
-                    white-space: nowrap;  
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    @include small-medium-mobile {
-                        max-width: 270px;
-                    }
-                    @include small-extra-large-mobile {
+                &__dishes {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    & h4 {
                         font-size: 1.2em;
+                        white-space: nowrap;  
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        @include small-mobile {
+                            max-width: 260px;
+                        }
+                        // @include small-medium-mobile {
+                        //     max-width: none;
+                        // }
+                        @include small-extra-large-mobile {
+                            font-size: 1.4em;
+                            max-width: none;
+                        }                    
+                        @include large-laptop {
+                            font-size: 1.5em;
+                            white-space: inherit;
+                        }
                     }
-                    @include large-laptop {
-                        font-size: 1.3em;
-                        max-width: 350px;
-                    }
-                }               
+    
+                    & p {
+                        padding-top:10px;
+                        max-width: 240px;
+                        white-space: nowrap;  
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        @include small-medium-mobile {
+                            max-width: 270px;
+                        }
+                        @include small-extra-large-mobile {
+                            font-size: 1.2em;
+                            max-width: 400px;
+                        }
+                        @include large-laptop {
+                            max-width: 400px;
+                        }
+                    }               
+                }
             }
 
             &__price {
@@ -153,8 +171,12 @@
                 
             }
             
+
+
             & ul {
                 padding-bottom: 45px;
+                animation-delay: start 3000ms 3000ms;
+
 
                 @include medium-mobile {
                     display: flex;
@@ -170,53 +192,144 @@
             }
 
             & li {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                background-color: white;
-                min-width: 290px;
-                max-width: 370px;
-                margin:12px 10px 0 10px;
-                padding-left: 12px;
-                border-radius: 15px;
-                box-shadow:4px 4px 10px $quinary-color;
-                cursor:pointer;
-                position: relative;
+                list-style: none;
 
-                &:hover {
 
-                    & .description {
-                        white-space: nowrap;  
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                @for $i from 1 through 9 {
+                    .delay-#{$i} {
+                        opacity: 0; 
+                        animation: cards ease-in 600ms both;  
+                        transform-origin: top;              
+                        animation-delay: 300ms * $i;
                     }
-                    & .check {
-                        transform: scaleX(1);
+                }
+                // & .delay-1 {  
+                    
+                // }
+                // & .delay-2 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;  
+                //     transform-origin: top; 
+                //     animation-delay: 300ms;
+                // }
+                // & .delay-3 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;
+                //     transform-origin: top; 
+                //     animation-delay: 600ms;
+                // }
+                // & .delay-4 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both; 
+                //     transform-origin: top; 
+                //     animation-delay:  900ms;
+                // }
+                // & .delay-5 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;
+                //     transform-origin: top; 
+                //     animation-delay: 1200ms;
+                // }
+                // & .delay-6 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;
+                //     transform-origin: top; 
+                //     animation-delay:  1500ms;
+                // }
+                // & .delay-7 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;
+                //     transform-origin: top; 
+                //     animation-delay:  1800ms;
+                // }
+                // & .delay-8 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both;
+                //     transform-origin: top; 
+                //     animation-delay: 2100ms;
+                // }
+                // & .delay-9 {
+                //     opacity: 0;
+                //     animation: cards ease-in 1s both; 
+                //     transform-origin: top; 
+                //     animation-delay: 2400ms;
+                // }
+                
+                @keyframes cards {
+                    0% {
+                      opacity: 0;
                     }
+                    50% {
+                      opacity: 0.5;
+                    }
+                  
+                    100% {
 
+                      opacity: 1;
+                    }
                 }
                 
+                
 
-                & .check {    
-                    position: absolute;   
-                    top:0;
-                    right: 0;            
-                    background-color: $tertiary-color;
-                    width: 80px;
-                    height: 100%;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    transform: scaleX(0);
-                    transform-origin: right 50%;
-                    transition: transform 1000ms;
-
-                    & i {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
+                
+                
+                // @keyframes start {
+                //     0% {
+                //         opacity: 0;
+                //         z-index: -1;
+                //         transform: translateY(1rem);
+                //     }
                     
-                }
+                //     100% {
+                //         opacity: 1;
+                //         z-index: 0;
+                //         transform: translateY(0);
+                //     }
+                // }
+
+                // &:hover {
+
+                //     & .description {
+                //         & p {
+
+                //             text-overflow: ellipsis;
+                //         }
+                //     }
+                //     & .check {
+                //         transform: translateX(0);
+                //         background-color: $tertiary-color;
+                //     }
+
+                // }
+                
+                // @keyframes start {
+                     
+                //     0% {
+                //         transform: scale(0);
+                //     }
+                //     100% {
+                //         transform: scale(1);
+                //         }
+                // }
+
+                // & .check {                
+                    
+                //     width: 80px;
+                //     height: 100px;
+                //     border-top-right-radius: 15px;
+                //     border-bottom-right-radius: 15px;
+                //     transform: translateX(80px);
+                    
+                //     transition: transform 1000ms 400ms;
+                    
+
+                //     & i {
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //     }
+                    
+                // }
                     
                 
 

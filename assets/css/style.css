@@ -629,44 +629,57 @@ footer ul p {
 }
 .menu__choice__plate__description {
   display: flex;
-  flex-direction: column;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  min-width: 290px;
+  max-width: 370px;
+  margin: 12px 10px 0 10px;
+  padding: 15px 0 15px 12px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px #e5e5e5;
+  cursor: pointer;
+}
+@media all and (min-width: 620px) {
+  .menu__choice__plate__description {
+    max-width: 550px;
+  }
 }
 @media all and (min-width: 1163px) {
   .menu__choice__plate__description {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-.menu__choice__plate__description h4 {
+.menu__choice__plate__description__dishes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__choice__plate__description__dishes h4 {
   font-size: 1.2em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 @media all and (min-width: 320px) {
-  .menu__choice__plate__description h4 {
+  .menu__choice__plate__description__dishes h4 {
     max-width: 260px;
   }
 }
-@media all and (min-width: 340px) {
-  .menu__choice__plate__description h4 {
+@media all and (min-width: 620px) {
+  .menu__choice__plate__description__dishes h4 {
+    font-size: 1.4em;
     max-width: none;
   }
 }
-@media all and (min-width: 620px) {
-  .menu__choice__plate__description h4 {
-    font-size: 1.4em;
-  }
-}
 @media all and (min-width: 1163px) {
-  .menu__choice__plate__description h4 {
-    font-size: 1.6em;
+  .menu__choice__plate__description__dishes h4 {
+    font-size: 1.5em;
     white-space: inherit;
   }
 }
-.menu__choice__plate__description p {
+.menu__choice__plate__description__dishes p {
   padding-top: 10px;
   max-width: 240px;
   white-space: nowrap;
@@ -674,19 +687,19 @@ footer ul p {
   text-overflow: ellipsis;
 }
 @media all and (min-width: 340px) {
-  .menu__choice__plate__description p {
+  .menu__choice__plate__description__dishes p {
     max-width: 270px;
   }
 }
 @media all and (min-width: 620px) {
-  .menu__choice__plate__description p {
+  .menu__choice__plate__description__dishes p {
     font-size: 1.2em;
+    max-width: 400px;
   }
 }
 @media all and (min-width: 1163px) {
-  .menu__choice__plate__description p {
-    font-size: 1.3em;
-    max-width: 350px;
+  .menu__choice__plate__description__dishes p {
+    max-width: 400px;
   }
 }
 .menu__choice__plate__price {
@@ -703,6 +716,7 @@ footer ul p {
 }
 .menu__choice__plate ul {
   padding-bottom: 45px;
+  animation-delay: start 3000ms 3000ms;
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate ul {
@@ -722,47 +736,72 @@ footer ul p {
   }
 }
 .menu__choice__plate li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  min-width: 290px;
-  max-width: 370px;
-  margin: 12px 10px 0 10px;
-  padding-left: 12px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 10px #e5e5e5;
-  cursor: pointer;
-  position: relative;
+  list-style: none;
 }
-.menu__choice__plate li:hover .description {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.menu__choice__plate li .delay-1 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 300ms;
 }
-.menu__choice__plate li:hover .check {
-  transform: scaleX(1);
+.menu__choice__plate li .delay-2 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 600ms;
 }
-.menu__choice__plate li:hover__price {
-  margin-right: 10px;
+.menu__choice__plate li .delay-3 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 900ms;
 }
-.menu__choice__plate li .check {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #99E2D0;
-  width: 80px;
-  height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transform: scaleX(0);
-  transform-origin: right 50%;
-  transition: transform 1000ms;
+.menu__choice__plate li .delay-4 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 1200ms;
 }
-.menu__choice__plate li .check i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu__choice__plate li .delay-5 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 1500ms;
+}
+.menu__choice__plate li .delay-6 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 1800ms;
+}
+.menu__choice__plate li .delay-7 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 2100ms;
+}
+.menu__choice__plate li .delay-8 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 2400ms;
+}
+.menu__choice__plate li .delay-9 {
+  opacity: 0;
+  animation: cards ease-in 600ms both;
+  transform-origin: top;
+  animation-delay: 2700ms;
+}
+@keyframes cards {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate li {
