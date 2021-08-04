@@ -18,6 +18,59 @@ body {
   cursor: pointer;
 }
 
+.logo__loader {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  width: 800px;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  font-family: inherit;
+  color: black;
+  font-size: 5em;
+  animation: fade-out ease-in 3s forwards;
+}
+.logo__loader p {
+  font-family: "Shrikhand";
+}
+.logo__loader__oh {
+  animation: loader 600ms;
+  animation-delay: 200ms;
+  transform-origin: center center;
+}
+.logo__loader__my {
+  animation: loader 600ms;
+  transform-origin: center center;
+  animation-delay: 700ms;
+}
+.logo__loader__food {
+  animation: loader 600ms;
+  transform-origin: center center;
+  animation-delay: 1400ms;
+}
+@keyframes loader {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(2) translate3d(0, -10%, 150px);
+    perspective: 150px;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .logo-site {
   display: flex;
   justify-content: center;
