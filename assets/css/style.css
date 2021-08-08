@@ -18,34 +18,41 @@ body {
   cursor: pointer;
 }
 
-.logo__loader {
+.logo {
+  background-color: white;
+  animation: fade-in 4s forwards;
+  position: absolute;
+  z-index: 1002;
+  width: 100%;
+  height: 100%;
+}
+.logo .logo__loader {
   position: fixed;
   top: 50%;
   left: 40%;
-  width: 800px;
+  width: 100%;
   height: 100%;
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  font-family: inherit;
-  color: black;
+  color: #222222;
   font-size: 5em;
   animation: fade-out ease-in 3s forwards;
 }
-.logo__loader p {
+.logo .logo__loader p {
   font-family: "Shrikhand";
 }
-.logo__loader__oh {
+.logo .logo__loader__oh {
   animation: loader 600ms;
   animation-delay: 200ms;
   transform-origin: center center;
 }
-.logo__loader__my {
+.logo .logo__loader__my {
   animation: loader 600ms;
   transform-origin: center center;
   animation-delay: 700ms;
 }
-.logo__loader__food {
+.logo .logo__loader__food {
   animation: loader 600ms;
   transform-origin: center center;
   animation-delay: 1400ms;
@@ -68,6 +75,16 @@ body {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fade-in {
+  0%, 25%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -364,7 +381,6 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background: linear-gradient(to top, #9356DC, #ef74da);
   opacity: 0;
   transform: scale(0);
@@ -693,6 +709,20 @@ footer ul p {
   box-shadow: 4px 4px 10px #e5e5e5;
   cursor: pointer;
 }
+.menu__choice__plate__description:hover .check {
+  width: 100px !important;
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  position: initial !important;
+}
+.menu__choice__plate__description:hover .menu__choice__plate__description__dishes {
+  max-width: 50% !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media all and (min-width: 620px) {
   .menu__choice__plate__description {
     max-width: 550px;
@@ -754,6 +784,17 @@ footer ul p {
   .menu__choice__plate__description__dishes p {
     max-width: 400px;
   }
+}
+.menu__choice__plate__description .check {
+  width: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  transform: translateX(100%);
+  transition: width 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 .menu__choice__plate__price {
   padding: 40px 22px 15px 0;
