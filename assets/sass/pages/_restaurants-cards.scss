@@ -54,6 +54,7 @@
 
             & a {
                 color: black;
+                text-decoration: none;
             }
             
             &__img {
@@ -79,9 +80,6 @@
                     }            
                 } 
             }
-            & a {
-                text-decoration: none;
-            }
 
             &__description {
                 color: black;
@@ -89,23 +87,34 @@
                 flex-direction: row;
                 justify-content: space-between;
                 padding: 20px 18px 18px 12px;
-                 
-                    & i {
-                        padding-top: 5px;
-                        font-size: 1.4rem;
-                        stroke-width: 0.5px;                       
-                    }
-                    
-                    &__text {
-                        padding-left: 14px;
+                
+                & i {
+                    padding-top: 5px;
+                    font-size: 1.4rem;
+                    stroke-width: 0.5px;                       
+                }
+                
+                &__text {
+                    padding-left: 14px;
+
+                    @include laptop {
+                        
                         & h3 {
-                            margin:0;
-                            padding-bottom: 10px;
+                            font-size: $heading-size-mobile;
                         }
                         & p {
-                            margin:0;
+                            font-size: 1.2em;
                         }
                     }
+                    
+                    & h3 {
+                        margin:0;
+                        padding-bottom: 10px;                          
+                    }
+                    & p {
+                        margin:0;
+                    }
+                }
             }       
         }   
     }

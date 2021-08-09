@@ -8,6 +8,7 @@ body {
 }
 
 .btn {
+  text-decoration: none;
   background: linear-gradient(to top, #9356DC, #ef74da);
   border-radius: 40px;
   color: white;
@@ -112,7 +113,7 @@ body {
     position: absolute;
     top: 27px;
     left: 24px;
-    size: 1.5rem;
+    font-size: 1.5rem;
     color: black;
   }
 }
@@ -133,6 +134,7 @@ body {
 }
 
 .btn {
+  text-decoration: none;
   background: linear-gradient(to top, #9356DC, #ef74da);
   border-radius: 40px;
   color: white;
@@ -466,6 +468,7 @@ body {
 }
 .restaurants__cards__info a {
   color: black;
+  text-decoration: none;
 }
 .restaurants__cards__info__img {
   max-width: 100%;
@@ -491,9 +494,6 @@ body {
     padding: 8px 12px;
   }
 }
-.restaurants__cards__info a {
-  text-decoration: none;
-}
 .restaurants__cards__info__description {
   color: black;
   display: flex;
@@ -508,6 +508,14 @@ body {
 }
 .restaurants__cards__info__description__text {
   padding-left: 14px;
+}
+@media all and (min-width: 1024px) {
+  .restaurants__cards__info__description__text h3 {
+    font-size: 1.5rem;
+  }
+  .restaurants__cards__info__description__text p {
+    font-size: 1.2em;
+  }
 }
 .restaurants__cards__info__description__text h3 {
   margin: 0;
@@ -840,7 +848,6 @@ footer ul p {
 }
 .menu__choice__plate ul {
   padding-bottom: 45px;
-  animation-delay: start 3000ms 3000ms;
 }
 @media all and (min-width: 376px) {
   .menu__choice__plate ul {
@@ -861,6 +868,24 @@ footer ul p {
 }
 .menu__choice__plate li {
   list-style: none;
+}
+@media all and (min-width: 376px) {
+  .menu__choice__plate li {
+    width: 349px;
+  }
+}
+@media all and (min-width: 620px) {
+  .menu__choice__plate li {
+    width: 450px;
+    padding-left: 20px;
+  }
+}
+@media all and (min-width: 1163px) {
+  .menu__choice__plate li {
+    padding-left: 22px;
+    max-height: 200px;
+    max-width: 500px;
+  }
 }
 .menu__choice__plate li .delay-1 {
   opacity: 0;
@@ -931,24 +956,6 @@ footer ul p {
   }
   100% {
     opacity: 1;
-  }
-}
-@media all and (min-width: 376px) {
-  .menu__choice__plate li {
-    width: 349px;
-  }
-}
-@media all and (min-width: 620px) {
-  .menu__choice__plate li {
-    width: 450px;
-    padding-left: 20px;
-  }
-}
-@media all and (min-width: 1163px) {
-  .menu__choice__plate li {
-    padding-left: 22px;
-    max-height: 200px;
-    max-width: 500px;
   }
 }
 

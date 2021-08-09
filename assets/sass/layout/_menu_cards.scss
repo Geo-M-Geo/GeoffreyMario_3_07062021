@@ -223,8 +223,6 @@
 
             & ul {
                 padding-bottom: 45px;
-                animation-delay: start 3000ms 3000ms;
-
 
                 @include medium-mobile {
                     display: flex;
@@ -242,6 +240,19 @@
             & li {
                 list-style: none;
 
+                @include medium-mobile {
+                    width: 349px;
+                }
+                @include small-extra-large-mobile {
+                    width: 450px;
+                    padding-left: 20px;
+                }
+
+                @include large-laptop {
+                    padding-left: 22px;
+                    max-height: 200px;
+                    max-width: 500px;
+                }
 
                 @for $i from 1 through 10 {
                     .delay-#{$i} {
@@ -264,85 +275,7 @@
 
                       opacity: 1;
                     }
-                }
-                
-                
-
-                
-                
-                // @keyframes start {
-                //     0% {
-                //         opacity: 0;
-                //         z-index: -1;
-                //         transform: translateY(1rem);
-                //     }
-                    
-                //     100% {
-                //         opacity: 1;
-                //         z-index: 0;
-                //         transform: translateY(0);
-                //     }
-                // }
-
-                // &:hover {
-
-                //     & .description {
-                //         & p {
-
-                //             text-overflow: ellipsis;
-                //         }
-                //     }
-                //     & .check {
-                //         transform: translateX(0);
-                //         background-color: $tertiary-color;
-                //     }
-
-                // }
-                
-                // @keyframes start {
-                     
-                //     0% {
-                //         transform: scale(0);
-                //     }
-                //     100% {
-                //         transform: scale(1);
-                //         }
-                // }
-
-                // & .check {                
-                    
-                //     width: 80px;
-                //     height: 100px;
-                //     border-top-right-radius: 15px;
-                //     border-bottom-right-radius: 15px;
-                //     transform: translateX(80px);
-                    
-                //     transition: transform 1000ms 400ms;
-                    
-
-                //     & i {
-                //         display: flex;
-                //         justify-content: center;
-                //         align-items: center;
-                //     }
-                    
-                // }
-                    
-                
-
-                @include medium-mobile {
-                    width: 349px;
-                }
-                @include small-extra-large-mobile {
-                    width: 450px;
-                    padding-left: 20px;
-                }
-
-                @include large-laptop {
-                    padding-left: 22px;
-                    max-height: 200px;
-                    max-width: 500px;
-                }                   
+                }                                 
             }                       
         }
     }
