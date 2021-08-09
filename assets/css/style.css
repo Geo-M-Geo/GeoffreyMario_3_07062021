@@ -21,23 +21,31 @@ body {
 .logo {
   background-color: white;
   animation: fade-in 4s forwards;
-  position: absolute;
-  z-index: 1002;
+  position: fixed;
+  z-index: 1000;
   width: 100%;
   height: 100%;
 }
 .logo .logo__loader {
   position: fixed;
-  top: 50%;
-  left: 40%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002;
   display: flex;
   flex-direction: row;
   color: #222222;
-  font-size: 5em;
+  font-size: 3em;
   animation: fade-out ease-in 3s forwards;
+}
+@media all and (min-width: 768px) {
+  .logo .logo__loader {
+    font-size: 5em;
+  }
 }
 .logo .logo__loader p {
   font-family: "Shrikhand";
@@ -62,7 +70,7 @@ body {
     transform: scaleX(1);
   }
   50% {
-    transform: scaleX(2) translate3d(0, -10%, 150px);
+    transform: scaleX(2) translate3d(0, -40%, 150px);
     perspective: 150px;
   }
   100% {
@@ -704,18 +712,35 @@ footer ul p {
   min-width: 290px;
   max-width: 370px;
   margin: 12px 10px 0 10px;
-  padding: 15px 0 15px 12px;
   border-radius: 15px;
   box-shadow: 4px 4px 10px #e5e5e5;
   cursor: pointer;
 }
 .menu__choice__plate__description:hover .check {
   width: 100px !important;
-  transform: translateX(0%) !important;
+  transform: translateX(1%) !important;
   opacity: 1 !important;
   visibility: visible !important;
   display: flex !important;
   position: initial !important;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 82px;
+  color: white;
+  font-size: 2em;
+}
+.menu__choice__plate__description:hover .check i {
+  transform: rotate(0);
+}
+@media all and (min-width: 620px) {
+  .menu__choice__plate__description:hover .check {
+    height: 90px !important;
+  }
+}
+@media all and (min-width: 1163px) {
+  .menu__choice__plate__description:hover .check {
+    height: 102px !important;
+  }
 }
 .menu__choice__plate__description:hover .menu__choice__plate__description__dishes {
   max-width: 50% !important;
@@ -728,16 +753,17 @@ footer ul p {
     max-width: 550px;
   }
 }
-@media all and (min-width: 1163px) {
-  .menu__choice__plate__description {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
 .menu__choice__plate__description__dishes {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 15px 0 15px 12px;
+}
+@media all and (min-width: 1163px) {
+  .menu__choice__plate__description__dishes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .menu__choice__plate__description__dishes h4 {
   font-size: 1.2em;
@@ -747,7 +773,7 @@ footer ul p {
 }
 @media all and (min-width: 320px) {
   .menu__choice__plate__description__dishes h4 {
-    max-width: 260px;
+    max-width: 230px;
   }
 }
 @media all and (min-width: 620px) {
@@ -795,6 +821,10 @@ footer ul p {
   opacity: 0;
   visibility: hidden;
   position: absolute;
+}
+.menu__choice__plate__description .check i {
+  transform: rotate(-360deg);
+  transition: transform 400ms ease-out;
 }
 .menu__choice__plate__price {
   padding: 40px 22px 15px 0;

@@ -100,18 +100,35 @@
                 min-width: 290px;
                 max-width: 370px;
                 margin:12px 10px 0 10px;
-                padding: 15px 0 15px 12px;
                 border-radius: 15px;
                 box-shadow:4px 4px 10px $quinary-color;
                 cursor:pointer;
 
                 &:hover .check { 
                     width: 100px !important; 
-                    transform: translateX(0%) !important; 
+                    transform: translateX(1%) !important; 
                     opacity: 1 !important; 
                     visibility: visible !important; 
                     display: flex !important; 
-                    position: initial !important; }
+                    position: initial !important; 
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    height: 82px;
+                    color: white;
+                    font-size: 2em;
+
+                    & i {
+                        transform: rotate(0);
+                    }
+
+                    @include small-extra-large-mobile {
+                        height: 90px !important;
+                    }
+
+                    @include large-laptop {
+                        height: 102px !important;
+                    }
+                }
                 
                 &:hover .menu__choice__plate__description__dishes {
                     max-width: 50% !important;
@@ -123,23 +140,27 @@
                 @include small-extra-large-mobile {
                     max-width: 550px;
                 }
-                @include large-laptop {
-                    padding-top:20px;
-                    padding-bottom: 20px;
-                }
+                
                 
                 &__dishes {
                     
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    padding: 15px 0 15px 12px;
+
+                    @include large-laptop {
+                        padding-top:20px;
+                        padding-bottom: 20px;
+                    }
+
                     & h4 {
                         font-size: 1.2em;
                         white-space: nowrap;  
                         overflow: hidden;
                         text-overflow: ellipsis;
                         @include small-mobile {
-                            max-width: 260px;
+                            max-width: 230px;
                         }
                         @include small-extra-large-mobile {
                             font-size: 1.4em;
@@ -179,8 +200,12 @@
                     transition: width .5s; 
                     opacity: 0; 
                     visibility: hidden; 
-                    position: absolute; 
+                    position: absolute;    
+                    & i {
+                        transform: rotate(-360deg);
+                        transition: transform 400ms ease-out;
                     }
+                }
             }
 
             &__price {
