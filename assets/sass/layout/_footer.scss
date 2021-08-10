@@ -1,4 +1,6 @@
-*{
+// Footer //
+
+* {
     margin: 0;
     padding:0;
 }
@@ -6,9 +8,10 @@
 .footer-title {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
+    
     @include large-laptop {
             font-size: 1.4em;
-        }
+    }
 }
 
 footer {
@@ -19,12 +22,14 @@ footer {
     padding-left:24px;
     padding-bottom: 36px;
     padding-right: 24px;
+    
     @include laptop {
         display: flex;
         flex-direction: row;      
         justify-content: space-between;
         align-items: center;
     }
+
     & ul {
         display: flex;
         flex-direction: column;
@@ -37,6 +42,7 @@ footer {
             width: 665px;
             padding-top: 0;
             align-items: center;
+            
             @include large-laptop {
                 width: 800px;
             }
@@ -44,10 +50,12 @@ footer {
         
         & li {
             list-style-type: none;
+            
             @include large-laptop {
                 font-size: 1.4em;
             }
-        }   
+        } 
+
         & a {
             display: flex;
             flex-direction: row;
@@ -56,15 +64,17 @@ footer {
             font-weight: 300;
             font-size: 0.8em;
         }
+
         & i {
             width: 22px;
+            
             @include large-laptop {
                 font-size: 1.2em;
             }
         }
+
         & p {
-            padding-left: 12px;
-            
+            padding-left: 12px;            
         }           
     } 
 }

@@ -1,4 +1,4 @@
-// introduction 
+// introduction of the website //
 
 .introduction {
     display: flex;
@@ -7,17 +7,21 @@
     padding-top: 43px;
     padding-bottom: 56px;
     background-color: $quaternary-color;
+    
     & h1 {
         font-size:$heading-size-mobile;
         text-align: center;
         margin: 0 64px 0 64px; 
+        
         @include small-tablette {
             font-size: $heading-size-medium;
         }
+        
         @include laptop{
             font-size: $heading-size-large;
         }
     }
+
     & p {
         font-size: 1.1rem;
         text-align: center;
@@ -33,12 +37,13 @@
             font-size: $heading-size-medium;
         }
     }
+
     & .btn {
         @include small-tablette {
             font-size: $heading-size-mobile;
+        }
         @include laptop {
             font-size: $heading-size-medium;
-        }
         }
     }
 }

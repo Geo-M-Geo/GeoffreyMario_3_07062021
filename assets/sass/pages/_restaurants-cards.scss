@@ -9,10 +9,12 @@
     &__title {
         padding-top: 57px;
         padding-bottom: 27px;
+        
         @include medium-mobile {
             text-align: center;
             padding-bottom: 20px;
         }
+        
         @include laptop{
             font-size: $heading-size-medium;
         }
@@ -30,6 +32,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        
         @include extra-large-mobile {
             flex-direction: inherit;
             align-items: center;
@@ -48,6 +51,7 @@
             max-width: 335px;
             background-color: white;
             border-radius:15px 15px 15px 15px;
+            
             @include medium-mobile {
                 margin-bottom: 20px;
             }
@@ -74,6 +78,7 @@
                     margin:0;
                     top:10px;
                     right: 10px;
+                    
                     @include medium-mobile {
                         font-size: 1rem;
                         padding: 8px 12px;   
@@ -111,6 +116,7 @@
                         margin:0;
                         padding-bottom: 10px;                          
                     }
+                    
                     & p {
                         margin:0;
                     }

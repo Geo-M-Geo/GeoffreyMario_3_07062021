@@ -1,9 +1,11 @@
-.menu{
+// Menu' dishes cards //
 
+.menu{
     display: flex;
     flex-direction: column;
     background-color: $quaternary-color;   
     margin-top: -50px;
+    
     &__title {
         display: flex;
         flex-direction: row;
@@ -15,6 +17,7 @@
         padding-top: 39px;
 
         @include large-laptop {
+
             .heart__container{
                 width: 40px;
                 height: 40px;
@@ -27,17 +30,21 @@
             padding-right: 20px;
             padding-left: 20px;
             font-family: 'Shrikhand', sans-serif;
+           
             @include small-tablette {
                     font-size: 2em;
                 }
+
             @include large-laptop {
                 font-size: 3em;
             }
         }
+
         & i {
             font-size: 1.5em;
             padding-right: 38px;
         }
+        
         @include medium-mobile {
            padding-top: 30px; 
            justify-content: center;
@@ -47,11 +54,13 @@
 
     &__choice {
         padding-top: 45px;
+        
         @include medium-laptop {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
         &__plate {
 
             &__title {
@@ -67,9 +76,11 @@
                     font-weight: 400;
                     padding-bottom: 9px;
                     margin-left: 19px;
+                    
                     @include small-extra-large-mobile {
                         font-size: 1.3em;
                     }
+                    
                     @include large-laptop {
                         font-size: 1.6em;
                     }
@@ -83,9 +94,11 @@
                     height: 3px;
                     background-color: $tertiary-color;
                     display: block;   
+                    
                     @include small-extra-large-mobile {
                         width:50px;
                     }
+                    
                     @include large-laptop {
                         width: 70px;
                     }
@@ -137,13 +150,13 @@
                     text-overflow: ellipsis;
 
                 }
+
                 @include small-extra-large-mobile {
                     max-width: 550px;
                 }
                 
                 
-                &__dishes {
-                    
+                &__dishes {     
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -159,13 +172,16 @@
                         white-space: nowrap;  
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        
                         @include small-mobile {
                             max-width: 230px;
                         }
+                        
                         @include small-extra-large-mobile {
                             font-size: 1.4em;
                             max-width: none;
                         }                    
+                        
                         @include large-laptop {
                             font-size: 1.5em;
                             white-space: inherit;
@@ -178,13 +194,16 @@
                         white-space: nowrap;  
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        
                         @include small-medium-mobile {
                             max-width: 270px;
                         }
+                        
                         @include small-extra-large-mobile {
                             font-size: 1.2em;
                             max-width: 400px;
                         }
+                        
                         @include large-laptop {
                             max-width: 400px;
                         }
@@ -201,6 +220,7 @@
                     opacity: 0; 
                     visibility: hidden; 
                     position: absolute;    
+                    
                     & i {
                         transform: rotate(-360deg);
                         transition: transform 400ms ease-out;
@@ -213,14 +233,13 @@
                 font-weight: bold;
                 text-align: center;
                 align-self: end;
+                
                 @include large-laptop {
                     padding-bottom: 27px;
                     font-size: 1.2em;
                 }                
             }
             
-
-
             & ul {
                 padding-bottom: 45px;
 
@@ -229,9 +248,11 @@
                     flex-direction: column;
                     align-items: center;
                 }
+                
                 @include small-tablette {
                     justify-content: space-around;
                 }
+                
                 @include medium-laptop {
                     padding-bottom: 65px;
                 }
@@ -243,6 +264,7 @@
                 @include medium-mobile {
                     width: 349px;
                 }
+                
                 @include small-extra-large-mobile {
                     width: 450px;
                     padding-left: 20px;

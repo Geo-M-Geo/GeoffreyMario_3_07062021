@@ -1,19 +1,23 @@
-// fonction // 
+// fonction of the website // 
 
 .fonction {
     & h2 { 
         padding: 50px 0 0 20px;     
         margin-bottom: 0;
+        
         @include small-tablette {
             font-size: $heading-size-medium;
         }
+        
         @include medium-mobile {
             text-align: center;
         }
+        
         @include laptop{
             font-size: $heading-size-large;
         }
     }
+
     &__step {
         height: 265px;
         display: flex;
@@ -32,6 +36,7 @@
         @include large-laptop {
             height: auto;
         }
+
         @include xxl-laptop{
             width: 1420px;
             margin: 20px auto 20px auto;
@@ -42,10 +47,12 @@
         display: flex;
         flex-direction: row;   
         align-items: center; 
+        
         & a {
             text-decoration: none;
             color: black;
         }
+        
         @include small-mobile {
             justify-content: center;
         }
@@ -54,8 +61,7 @@
             padding-top: 40px;
             padding-bottom: 40px;
         }
-        
-    
+           
         & p {
             position: relative;
             right: -17px;
@@ -64,6 +70,7 @@
             background-color: $primary-color;
             border-radius: 20px;
         }
+
         &__explanation {
             display: flex;
             flex-direction: row;
@@ -76,28 +83,35 @@
             padding-bottom: 25px;
             box-shadow:1px 1px 20px $quinary-color;
             font-size: 0.9em;
+            
             &:hover {
                 background-color: #f5edff;
                 box-shadow:1px 1px 20px #d2d2d2;
+                
                 & i {
                     color: $primary-color;
                     opacity: 1;
                     
                 }
             }
+
             @include medium-mobile {
                 min-width: 325px;
 
             }
+
             @include laptop{
                 width: 400px;
             }
+
             & h3 {
                 margin: 0;
                 padding-left: 18px;
+                
                 @include small-tablette{
                     font-size: 1.4em;
                 }
+                
                 @include laptop{
                     font-size: $heading-size-mobile;
                 }       
@@ -110,6 +124,7 @@
                 opacity: 0.5;
                 font-size: 1.3em;
             }
+            
             @include small-tablette {
                 width: 350px;
             }       
