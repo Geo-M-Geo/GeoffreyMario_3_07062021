@@ -51,6 +51,13 @@
             max-width: 335px;
             background-color: white;
             border-radius:15px 15px 15px 15px;
+            max-height: 278px;
+
+            & .hearts {
+                position: relative;
+                left: 112px;
+                bottom:73px;
+            }
             
             @include medium-mobile {
                 margin-bottom: 20px;

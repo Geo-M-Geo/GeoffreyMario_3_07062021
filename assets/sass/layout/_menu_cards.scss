@@ -5,6 +5,10 @@
     flex-direction: column;
     background-color: $quaternary-color;   
     margin-top: -50px;
+
+    & .heart {
+        position: initial;
+    }
     
     &__title {
         display: flex;
@@ -224,6 +228,7 @@
                     & i {
                         transform: rotate(-360deg);
                         transition: transform 400ms ease-out;
+                        overflow: hidden;
                     }
                 }
             }
