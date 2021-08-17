@@ -387,7 +387,7 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  clip-path: url(#svgPath);
+  clip-path: url(#svgPath1);
 }
 .hearts .hearts__container .hearts__container__clip:hover::before {
   transform: scale(1);
