@@ -121,6 +121,8 @@
                 box-shadow:4px 4px 10px $quinary-color;
                 cursor:pointer;
 
+                // Check element animation, used for when you pick your dish //
+
                 &:hover .check { 
                     width: 100px !important; 
                     transform: translateX(1%) !important; 
