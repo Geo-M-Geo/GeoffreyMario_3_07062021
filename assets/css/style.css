@@ -24,7 +24,7 @@ body {
 
 .logo {
   background-color: white;
-  animation: fade-in 4s forwards;
+  animation: fade-out-screen 4s forwards;
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -91,7 +91,7 @@ body {
     visibility: hidden;
   }
 }
-@keyframes fade-in {
+@keyframes fade-out-screen {
   0%, 25%, 50% {
     opacity: 1;
   }
