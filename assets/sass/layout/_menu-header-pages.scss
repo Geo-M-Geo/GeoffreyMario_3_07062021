@@ -1,0 +1,53 @@
+.menu {
+
+    &__header {
+        position: relative;
+
+        @include medium-mobile {
+            position: inherit;
+        }
+
+// Image du header responsive //
+
+
+        &__title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $quaternary-color;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            padding-top: 39px;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            
+            & h2 {
+                font-weight: 500;
+                font-size: 1.7em;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-family: 'Shrikhand', sans-serif;
+                @include small-tablette {
+                        font-size: 2em;
+                        padding-top: 20px;
+                    }
+                @include large-laptop {
+                    font-size: 3em;
+                }
+            }
+            & i {
+                font-size: 1.5em;
+                padding-right: 38px;
+            }
+            @include medium-mobile {
+               padding-top: 30px; 
+               position: inherit;
+               background-color: inherit;
+               justify-content: center;
+               
+            }                      
+        }          
+    }
+}
